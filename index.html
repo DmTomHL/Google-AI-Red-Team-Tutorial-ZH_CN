@@ -42,11 +42,23 @@
                     },
                     animation: {
                         'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'fade-in-up': 'fadeInUp 0.7s ease-out forwards',
+                        'float': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
                     keyframes: {
                         fadeIn: {
                             '0%': { opacity: 0 },
                             '100%': { opacity: 1 },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                            '100%': { transform: 'translateY(0px)' },
                         }
                     },
                 }
@@ -59,6 +71,71 @@
         html {
             scroll-behavior: smooth;
             font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        /* 进度条样式 */
+        #progress-bar {
+            height: 3px;
+            background: linear-gradient(to right, #0c87e0, #7935ee);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: width 0.2s ease-out;
+        }
+
+        /* 目录选中效果 */
+        .sidebar a.active {
+            background-color: rgba(12, 135, 224, 0.1);
+            color: #0c87e0;
+            font-weight: 500;
+            padding: 0.75rem 1rem;  /* 保持与普通状态一致的内边距 */
+            line-height: 1.5;  /* 保持与普通状态一致的行高 */
+        }
+
+        .sidebar a.active:hover {
+            background-color: rgba(12, 135, 224, 0.15);
+        }
+
+        /* 二级标签选中效果 */
+        .sidebar a[href^="#"].active {
+            padding: 0.5rem 1rem 0.5rem 2rem;  /* 保持与普通二级标签一致的内边距 */
+            line-height: 1.5;
+        }
+
+        .dark .sidebar a.active {
+            background-color: rgba(12, 135, 224, 0.2);
+            color: #36a3f5;
+        }
+
+        .dark .sidebar a.active:hover {
+            background-color: rgba(12, 135, 224, 0.25);
+        }
+
+        /* 目录项悬停效果 */
+        .sidebar a {
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.75rem 1rem;  /* 增加内边距 */
+            line-height: 1.5;  /* 增加行高 */
+            margin: 0.25rem 0;  /* 增加项目间距 */
+        }
+
+        .sidebar a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to bottom, #0c87e0, #7935ee);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar a:hover::before,
+        .sidebar a.active::before {
+            transform: scaleY(1);
         }
 
         .code-block {
@@ -89,12 +166,52 @@
         }
 
         .content-card {
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .content-card:hover {
+            transform: translateY(-0.25rem); /* 相当于 -3px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+        }
+
+        .ai-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .ai-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 渐变文本效果 */
+        .gradient-text {
+            background: linear-gradient(135deg, #0c87e0, #7935ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* 按钮悬停效果 */
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 卡片过渡效果 */
+        .card-transition {
+            transition: all 0.3s ease;
+        }
+        
+        .card-transition:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
         .concept-highlight {
@@ -123,21 +240,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-        }
-
-        .ai-card {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .ai-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #0c87e0, #7935ee);
         }
 
         /* 为数学公式添加特殊样式 */
@@ -171,18 +273,21 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <!-- 进度条 -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 z-50 transition-all duration-300" style="width: 0%"></div>
+    
     <!-- 导航栏 -->
-    <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md px-4 py-3 flex justify-between items-center">
+    <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md px-4 py-3 flex justify-between items-center animate-fade-in">
         <div class="flex items-center space-x-2">
             <i class="fas fa-brain text-2xl feature-icon"></i>
-            <h1 class="text-xl font-bold">人工智能基础学习</h1>
+            <h1 class="text-xl font-bold gradient-text">人工智能基础学习</h1>
         </div>
         <div class="flex items-center space-x-4">
-            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">
                 <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
                 <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
             </button>
-            <a href="#author" class="hidden md:flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <a href="#author" class="hidden md:flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors hover-effect">
                 <i class="fas fa-user-circle"></i>
                 <span>作者信息</span>
             </a>
@@ -192,44 +297,89 @@
     <!-- 主内容区 -->
     <div class="flex flex-1 relative">
         <!-- 侧边栏/目录 -->
-        <aside id="sidebar" class="sidebar fixed top-16 left-0 bottom-0 w-64 bg-white dark:bg-gray-800 shadow-md overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform z-40">
+        <aside id="sidebar" class="sidebar fixed top-16 left-0 bottom-0 w-64 bg-white dark:bg-gray-800 shadow-md overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform z-40 animate-fade-in">
             <div class="p-4">
                 <h2 class="text-lg font-bold mb-4 text-primary-700 dark:text-primary-400">目录</h2>
                 <ul class="space-y-1">
-                    <li><a href="#ai-ml" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">人工智能与机器学习</a></li>
-                    <li><a href="#deep-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">深度学习</a></li>
-                    <li><a href="#ai-ml-dl-relation" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">AI、ML与DL的关系</a></li>
-                    <li><a href="#ai-math" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">人工智能数学复习</a></li>
+                    <!-- AI基础概念 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 card-transition" onclick="toggleSubmenu('ai-basics')">
+                            <span>AI基础概念</span>
+                            <i id="ai-basics-icon" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </div>
+                        <ul id="ai-basics-submenu" class="pl-4 mt-1 hidden space-y-1 animate-fade-in-up">
+                            <li><a href="#ai-ml" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">人工智能与机器学习</a></li>
+                            <li><a href="#deep-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">深度学习</a></li>
+                            <li><a href="#ai-ml-dl-relation" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">AI、ML与DL的关系</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 数学基础 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 card-transition" onclick="toggleSubmenu('math')">
+                            <span>数学基础</span>
+                            <i id="math-icon" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </div>
+                        <ul id="math-submenu" class="pl-4 mt-1 hidden space-y-1 animate-fade-in-up">
+                            <li><a href="#ai-math" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">人工智能数学复习</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 监督学习 -->
                     <li>
                         <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('supervised')">
-                            <span>监督学习算法</span>
+                            <span>监督学习</span>
                             <i id="supervised-icon" class="fas fa-chevron-down text-xs"></i>
                         </div>
-                        <ul id="supervised-submenu" class="pl-4 space-y-1 hidden">
-                            <li><a href="#supervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">原理与概念</a></li>
+                        <ul id="supervised-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#supervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">监督学习概述</a></li>
                             <li><a href="#linear-regression" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">线性回归</a></li>
                             <li><a href="#logistic-regression" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">逻辑回归</a></li>
                             <li><a href="#decision-tree" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">决策树</a></li>
-                            <li><a href="#naive-bayes" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">朴素贝叶斯</a></li>
                             <li><a href="#svm" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">支持向量机</a></li>
                         </ul>
                     </li>
+
+                    <!-- 无监督学习 -->
                     <li>
                         <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('unsupervised')">
-                            <span>无监督学习算法</span>
+                            <span>无监督学习</span>
                             <i id="unsupervised-icon" class="fas fa-chevron-down text-xs"></i>
                         </div>
-                        <ul id="unsupervised-submenu" class="pl-4 space-y-1 hidden">
-                            <li><a href="#unsupervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">基本概念</a></li>
+                        <ul id="unsupervised-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#unsupervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">无监督学习概述</a></li>
                             <li><a href="#kmeans" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">K-Means聚类</a></li>
                             <li><a href="#pca" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">主成分分析</a></li>
                             <li><a href="#anomaly-detection" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">异常检测</a></li>
                         </ul>
                     </li>
-                    <li><a href="#reinforcement-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">强化学习算法</a></li>
-                    <li><a href="#neural-networks" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">神经网络</a></li>
-                    <li><a href="#generative-ai" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">生成式人工智能</a></li>
-                    <li><a href="#ai-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">AI安全与红队测试</a></li>
+
+                    <!-- 深度学习进阶 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('deep-learning-advanced')">
+                            <span>深度学习进阶</span>
+                            <i id="deep-learning-advanced-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="deep-learning-advanced-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#neural-networks" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">神经网络基础</a></li>
+                            <li><a href="#generative-ai" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">生成式AI</a></li>
+                            <li><a href="#reinforcement-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">强化学习</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- AI安全与伦理 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('ai-security')">
+                            <span>AI安全与伦理</span>
+                            <i id="ai-security-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="ai-security-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#ai-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">AI安全与红队测试</a></li>
+                            <li><a href="#ml-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">机器学习系统攻击</a></li>
+                            <li><a href="#llm-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">LLM安全威胁</a></li>
+                            <li><a href="#prompt-injection" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">提示注入与越狱</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -1170,7 +1320,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
                             <h4 class="font-medium mb-4 text-primary-600 dark:text-primary-300">决策树示例</h4>
                             <!-- 决策树示例图 -->
@@ -1185,8 +1335,8 @@
 
                                     <!-- 第一层连接线 -->
                                     <div class="absolute top-12 left-1/2 w-40 h-px bg-gray-400 transform -translate-x-1/2"></div>
-                                    <div class="absolute top-12 left-[30%] h-10 border-l border-gray-400"></div>
-                                    <div class="absolute top-12 left-[70%] h-10 border-l border-gray-400"></div>
+                                    <div class="absolute top-12 left-[26%] h-10 border-l border-gray-400"></div>
+                                    <div class="absolute top-12 left-[74%] h-10 border-l border-gray-400"></div>
 
                                     <!-- 第二层节点 -->
                                     <div class="absolute top-20 left-[30%] transform -translate-x-1/2">
@@ -2010,6 +2160,7 @@
 
                             </div>
                             <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    </div>
                     <ul class="space-y-2 mb-4">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
@@ -3112,7 +3263,7 @@
                     
                     <p class="mb-6">ML系统面临独特漏洞。红队评估更优，因攻击通常需要较长时间。需评估所有交互组件。</p>
                     
-                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">针对机器学习系统的攻击（OWASP ML Top 10）</h3>
+                    <h3 id="ml-security" class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">针对机器学习系统的攻击（OWASP ML Top 10）</h3>
                     
                     <div class="grid md:grid-cols-2 gap-4 mb-8">
                         <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
@@ -3187,7 +3338,7 @@
                         </div>
                     </div>
                     
-                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">针对文本生成模型的攻击（LLM OWASP Top 10）</h3>
+                    <h3 id="llm-security" class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">针对文本生成模型的攻击（LLM OWASP Top 10）</h3>
                     
                     <div class="grid md:grid-cols-2 gap-4 mb-8">
                         <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
@@ -3262,7 +3413,7 @@
                         </div>
                     </div>
                     
-                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">提示注入与越狱</h3>
+                    <h3 id="prompt-injection" class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">提示注入与越狱</h3>
                     
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div>
@@ -3352,6 +3503,7 @@
                                     <i class="fab fa-github mr-2 w-5 text-center"></i>
                                     <span>GitHub: Acmesec/PromptJailbreakManual（Prompt越狱手册）</span>
                                 </a>
+                                </a>
                                 <a href="https://github.com/Acmesec/theAIMythbook" target="_blank" class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                                     <i class="fab fa-github mr-2 w-5 text-center"></i>
                                     <span>GitHub: Acmesec/theAIMythbookGtheAlMythbook（AI迷思录）</span>
@@ -3374,81 +3526,113 @@
 
     <!-- JavaScript -->
     <script>
-        // 设置深色/浅色模式
+        // 主题切换
         const themeToggle = document.getElementById('theme-toggle');
-        const htmlElement = document.documentElement;
         
-        // 初始化主题
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            htmlElement.classList.add('dark');
-        } else {
-            htmlElement.classList.remove('dark');
+        // 检查系统时间并设置主题
+        function setThemeByTime() {
+            const hour = new Date().getHours();
+            const isNight = hour >= 18 || hour < 6; // 晚上6点到早上6点为夜间模式
+            
+            if (isNight) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
         }
-        
-        // 切换主题
+
+        // 初始化主题
+        setThemeByTime();
+
+        // 监听主题切换按钮
         themeToggle.addEventListener('click', () => {
-            if (htmlElement.classList.contains('dark')) {
-                htmlElement.classList.remove('dark');
-                localStorage.theme = 'light';
-            } else {
-                htmlElement.classList.add('dark');
-                localStorage.theme = 'dark';
-            }
+            document.documentElement.classList.toggle('dark');
         });
-        
-        // 侧边栏切换
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-        const sidebar = document.getElementById('sidebar');
-        
-        sidebarToggle.addEventListener('click', () => {
-            if (sidebar.classList.contains('-translate-x-full')) {
-                sidebar.classList.remove('-translate-x-full');
-                sidebarToggle.innerHTML = '<i class="fas fa-times"></i>';
-            } else {
-                sidebar.classList.add('-translate-x-full');
-                sidebarToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            }
+
+        // 每分钟检查一次时间，自动切换主题
+        setInterval(setThemeByTime, 60000);
+
+        // 进度条
+        const progressBar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + '%';
         });
-        
-        // 子菜单切换
+
+        // 目录选中效果
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.sidebar a[href^="#"]');
+
+        function updateActiveSection() {
+            const scrollPosition = window.scrollY + 100; // 添加偏移量以提前触发
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // 监听滚动事件
+        window.addEventListener('scroll', updateActiveSection);
+        // 初始加载时也执行一次
+        document.addEventListener('DOMContentLoaded', updateActiveSection);
+
+        // 侧边栏菜单切换
         function toggleSubmenu(id) {
             const submenu = document.getElementById(`${id}-submenu`);
             const icon = document.getElementById(`${id}-icon`);
             
             if (submenu.classList.contains('hidden')) {
                 submenu.classList.remove('hidden');
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
+                icon.style.transform = 'rotate(180deg)';
             } else {
                 submenu.classList.add('hidden');
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+                icon.style.transform = 'rotate(0deg)';
             }
         }
-        
-        // 滚动淡入效果
-        document.addEventListener('DOMContentLoaded', function() {
-            const fadeSections = document.querySelectorAll('.fade-in-section');
-            
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            fadeSections.forEach(section => {
-                observer.observe(section);
+
+        // 滚动动画
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
             });
+        }, observerOptions);
+
+        // 为所有需要动画的元素添加观察者
+        document.querySelectorAll('.fade-in-section').forEach((element) => {
+            observer.observe(element);
         });
-        
-        // 点击侧边栏链接关闭移动端侧边栏
-        document.querySelectorAll('#sidebar a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 1024) {
-                    sidebar.classList.add('-translate-x-full');
-                    sidebarToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+        // 添加平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
@@ -3457,3 +3641,4 @@
 </html>
                  
 			
+
