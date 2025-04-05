@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN" class="light">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH7CXDX6N4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RH7CXDX6N4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Ai  | 新手入门Ai的不二指南</title>
@@ -396,6 +404,3000 @@
                 <div class="text-center mb-12">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">Hello Ai </h1>
                     <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">为新生构建的可视化的入门AI学习指南，涵盖机器学习、深度学习、强化学习，神经网络，LLM，Ai安全与红队测试 </p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 content-card">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <!-- 基础概念 -->
+                        <div class="flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg float-animation">
+                                <i class="fas fa-brain text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">基础概念</h3>
+                            <p class="text-gray-600 dark:text-gray-300">掌握AI、ML与DL的核心理论与关系</p>
+                        </div>
+
+                        <!-- 算法解析 -->
+                        <div class="flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-lg float-animation">
+                                <i class="fas fa-project-diagram text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">算法解析</h3>
+                            <p class="text-gray-600 dark:text-gray-300">详解各类机器学习算法原理与应用</p>
+                        </div>
+
+                        <!-- 安全实践 -->
+                        <div class="flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+                            <div class="w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center shadow-lg float-animation">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">安全实践</h3>
+                            <p class="text-gray-600 dark:text-gray-300">深入了解AI安全与红队测试技术</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- 人工智能与机器学习基础 -->
+            <section id="ai-ml" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-brain"></i></span>
+                    人工智能与机器学习
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700 dark:text-primary-400">人工智能（AI）</h3>
+                    <p class="mb-4">人工智能（AI）是开发具备认知能力、能执行类人智能任务的系统的学科。其关键领域包括：</p>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium concept-highlight">自然语言处理（NLP）</span>：理解、解释和生成人类语言
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium concept-highlight">计算机视觉</span>：解读图像和视频内容
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium concept-highlight">机器人学</span>：研发能执行各种任务的机器人
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium concept-highlight">专家系统</span>：模拟人类专家的决策过程
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <p class="mb-4">AI旨在增强人类能力，系统可提升决策效率，支持数据分析、预测和自动化。AI解决多个领域的复杂问题：</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mb-4">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">医疗</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">优化诊断流程，加速药物研发</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">金融</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">检测欺诈行为，优化投资策略</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">网络安全</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">识别并缓解网络威胁</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700 dark:text-primary-400">机器学习（ML）</h3>
+                    <p class="mb-6">机器学习是AI的子领域，专注于构建能从数据中学习并提升性能的系统，无需显式编程。ML算法使用统计技术识别数据模式，通过分析数据集不断改进性能，是AI应用的核心技术。</p>
+                    
+                    <h4 class="text-xl font-medium mb-4">机器学习的三大类型</h4>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg hover:shadow-md transition-shadow">
+                            <h5 class="font-medium mb-3 text-primary-600 dark:text-primary-300">监督学习</h5>
+                            <p class="text-sm mb-3">从标记数据中学习，数据点与已知输出相关联。算法分析输入与标签关系建立预测模型。</p>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">
+                                应用：图像分类、垃圾邮件检测、防欺诈
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg hover:shadow-md transition-shadow">
+                            <h5 class="font-medium mb-3 text-primary-600 dark:text-primary-300">无监督学习</h5>
+                            <p class="text-sm mb-3">从无标签数据中学习，挖掘数据内在结构或模式。</p>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">
+                                应用：客户细分、异常检测、降维
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg hover:shadow-md transition-shadow">
+                            <h5 class="font-medium mb-3 text-primary-600 dark:text-primary-300">强化学习</h5>
+                            <p class="text-sm mb-3">通过与环境互动，在试错中学习。算法根据结果获得奖励或惩罚，优化策略。</p>
+                            <div class="text-xs text-gray-500 dark:text-gray-400">
+                                应用：玩游戏、机器人控制、自动驾驶
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-xl font-medium mb-4">ML的应用领域</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                        <div class="text-center p-3">
+                            <i class="fas fa-heartbeat text-2xl mb-2 text-red-500"></i>
+                            <div class="text-sm">医疗健康</div>
+                        </div>
+                        <div class="text-center p-3">
+                            <i class="fas fa-chart-line text-2xl mb-2 text-green-500"></i>
+                            <div class="text-sm">金融</div>
+                        </div>
+                        <div class="text-center p-3">
+                            <i class="fas fa-bullseye text-2xl mb-2 text-blue-500"></i>
+                            <div class="text-sm">营销</div>
+                        </div>
+                        <div class="text-center p-3">
+                            <i class="fas fa-shield-alt text-2xl mb-2 text-purple-500"></i>
+                            <div class="text-sm">网络安全</div>
+                        </div>
+                        <div class="text-center p-3">
+                            <i class="fas fa-car text-2xl mb-2 text-yellow-500"></i>
+                            <div class="text-sm">交通</div>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6 text-gray-600 dark:text-gray-300">ML是AI的核心驱动力，其学习与适应能力是智能系统的基础。</p>
+                </div>
+            </section>
+
+            <!-- 深度学习 -->
+            <section id="deep-learning" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-network-wired"></i></span>
+                    深度学习（DL）
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">深度学习是ML的子领域，使用多层神经网络从复杂数据中学习特征。它能自动识别大数据集中的复杂模式，特别擅长处理非结构化或高维数据。</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">主要特征</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <i class="fas fa-angle-right text-primary-500 mt-1 mr-1"></i>
+                                    <span>分层特征学习：模型学习数据的层次化表征</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-angle-right text-primary-500 mt-1 mr-1"></i>
+                                    <span>端到端学习：支持原始输入到最终输出的直接映射</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-angle-right text-primary-500 mt-1 mr-1"></i>
+                                    <span>可扩展性：能利用大规模数据和计算资源</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="md:col-span-2 bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">常用的神经网络类型</h4>
+                            <div class="grid sm:grid-cols-3 gap-4">
+                                <div>
+                                    <h5 class="font-medium mb-1 text-secondary-600 dark:text-secondary-300">卷积神经网络(CNN)</h5>
+                                    <p class="text-xs">为图像/视频设计，专注检测局部模式</p>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium mb-1 text-secondary-600 dark:text-secondary-300">循环神经网络(RNN)</h5>
+                                    <p class="text-xs">适用于序列数据，保留时序信息</p>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium mb-1 text-secondary-600 dark:text-secondary-300">变换器(Transformer)</h5>
+                                    <p class="text-xs">尤其适用于NLP，通过自注意力处理远距离依赖</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4">深度学习的变革性影响</h3>
+                    <p class="mb-4">DL在多个领域达到了SOTA（最先进水平）性能：</p>
+                    
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-camera mr-2"></i>计算机视觉
+                            </h4>
+                            <ul class="text-sm space-y-1">
+                                <li>图像分类</li>
+                                <li>物体检测</li>
+                                <li>图像分割</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-comment-alt mr-2"></i>自然语言处理
+                            </h4>
+                            <ul class="text-sm space-y-1">
+                                <li>情感分析</li>
+                                <li>机器翻译</li>
+                                <li>文本生成</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-microphone mr-2"></i>语音识别
+                            </h4>
+                            <ul class="text-sm space-y-1">
+                                <li>语音转录</li>
+                                <li>语音合成</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-gamepad mr-2"></i>强化学习
+                            </h4>
+                            <ul class="text-sm space-y-1">
+                                <li>训练智能体执行复杂任务</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI、ML与DL的关系 -->
+            <section id="ai-ml-dl-relation" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-project-diagram"></i></span>
+                    AI、ML与DL的关系
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <div class="mb-8 relative overflow-hidden">
+                        <!-- 关系图 -->
+                        <div class="flex justify-center my-6">
+                            <div class="relative w-full max-w-lg h-64 mx-auto">
+
+                                <!-- AI大圈 -->
+                                <div class="absolute inset-0 rounded-full bg-primary-100 dark:bg-primary-900 border-2 border-primary-300 dark:border-primary-700 flex items-center justify-center">
+                                    <!-- AI 文字 -->
+                                    <span class="absolute top-1.5 z-30 text-lg font-medium text-primary-800 dark:text-primary-200">人工智能(AI)</span>
+
+                                    <!-- ML中圈 -->
+                                    <div class="absolute w-3/4 h-3/4 rounded-full bg-secondary-100 dark:bg-secondary-900 border-2 border-secondary-300 dark:border-secondary-700 flex items-center justify-center">
+                                        <!-- ML 文字 -->
+                                        <span class="absolute top-2 z-30 text-base font-medium text-secondary-800 dark:text-secondary-200">机器学习(ML)</span>
+
+                                        <!-- DL小圈 -->
+                                        <div class="absolute w-3/5 h-3/5 rounded-full bg-purple-100 dark:bg-purple-900 border-2 border-purple-300 dark:border-purple-700 flex items-center justify-center">
+                                            <!-- DL 文字 -->
+                                            <span class="z-30 text-sm font-medium text-purple-800 dark:text-purple-200">深度学习(DL)</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-center text-gray-600 dark:text-gray-300">
+                            ML和DL是AI的子领域，共同赋予系统学习和决策能力
+                        </p>
+                    </div>
+                    
+                    <p class="mb-4">ML和DL是AI的支柱。ML算法（包括DL）使机器能够识别模式、提取特征并做出决策。不同类型的ML技术共同推动AI目标的实现。例如：</p>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">计算机视觉</span>：监督学习结合CNN使机器能够解读图像
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">自然语言处理（NLP）</span>：传统ML与DL模型共同实现语言理解与生成
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <p class="mb-6">DL通过强大的特征提取能力增强ML性能，尤其在处理复杂非结构化数据方面表现突出。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4">ML、DL与AI的协同作用</h3>
+                    <p class="mb-4">ML、DL与AI协作解决复杂问题：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-car-side mr-2"></i>自动驾驶
+                            </h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">ML与DL处理传感器数据、识别物体并作出决策</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300 flex items-center">
+                                <i class="fas fa-robot mr-2"></i>机器人学
+                            </h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">强化学习训练机器人执行各种任务</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300">ML与DL的结合极大提升了AI的潜力，推动技术进步，增强人类能力。这种协同效应不断推动AI前沿研究的发展。</p>
+                </div>
+            </section>
+
+            <!-- 人工智能数学复习 -->
+            <section id="ai-math" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-square-root-alt"></i></span>
+                    人工智能数学复习
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">本节回顾AI学习中的关键数学概念，供学习参考。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- 基本算术运算 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">基本算术运算</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>乘法 ( * )</span>
+                                    <span class="math-block">3 * 4 = 12</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>除法 ( / )</span>
+                                    <span class="math-block">10 / 2 = 5</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>加法 ( + )</span>
+                                    <span class="math-block">5 + 3 = 8</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>减法 ( - )</span>
+                                    <span class="math-block">9 - 4 = 5</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 代数符号 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">代数符号</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between items-center">
+                                    <span>下标符号 ( x_t )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">索引变量</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>上标符号 ( xⁿ )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">指数</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>范数 ( ||...|| )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">衡量向量大小</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>求和符号 ( Σ )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">一系列项的和</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 对数与指数 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">对数与指数</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>对数（基2）</span>
+                                    <span class="math-block">log₂(8) = 3</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>自然对数</span>
+                                    <span class="math-block">ln(e²) = 2</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>指数函数</span>
+                                    <span class="math-block">e² ≈ 7.389</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>指数函数（基2）</span>
+                                    <span class="math-block">2³ = 8</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 矩阵与向量运算 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">矩阵与向量运算</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between items-center">
+                                    <span>矩阵-向量乘法 ( A * v )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">线性代数核心</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>矩阵-矩阵乘法 ( A * B )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">用于线性变换、深度学习</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>转置 ( Aᵀ )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">矩阵行列互换</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>逆矩阵 ( A⁻¹ )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">满足 A * A⁻¹ = I 的矩阵</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 集合论 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">集合论</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between">
+                                    <span>基数 ( |S| )</span>
+                                    <span class="math-block">|{1..5}| = 5</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>并集 ( ∪ )</span>
+                                    <span class="math-block">{1,2,3} ∪ {3,4,5} = {1..5}</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>交集 ( ∩ )</span>
+                                    <span class="math-block">{1,2,3} ∩ {3,4,5} = {3}</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>补集 ( Aᶜ )</span>
+                                    <span class="math-block">U={1..5}, A={1,2,3} → Aᶜ = {4,5}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 比较运算符 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">比较运算符</h3>
+                            <ul class="grid grid-cols-2 gap-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-angle-right text-primary-500 mr-2"></i>
+                                    <span>大于或等于 ( >= )</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-angle-right text-primary-500 mr-2"></i>
+                                    <span>小于或等于 ( <= )</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-angle-right text-primary-500 mr-2"></i>
+                                    <span>相等 ( == )</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-angle-right text-primary-500 mr-2"></i>
+                                    <span>不等 ( != )</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 特征值与特征向量 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">特征值与特征向量</h3>
+                            <ul class="space-y-3">
+                                <li>
+                                    <div class="font-medium">特征值 ( λ )</div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-300">线性变换的标量参数，满足 A * v = λ * v</div>
+                                </li>
+                                <li>
+                                    <div class="font-medium">特征向量</div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-300">满足 A * v = λ * v 的非零向量，用于降维（如PCA）</div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 函数与概率 -->
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">函数与概率</h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between items-center">
+                                    <span>函数 ( f(x) )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">f(x) = x² + 2x + 1</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>条件概率 ( P(x | y) )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">给定y时x的概率</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>期望 ( E[...] )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">随机变量平均值</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span>方差 ( Var(X) )</span>
+                                    <span class="text-sm text-gray-600 dark:text-gray-300">衡量数据离散度</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 监督学习算法 -->
+            <section id="supervised-intro" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-chalkboard-teacher"></i></span>
+                    监督学习算法
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 mb-8">
+                    <p class="mb-6">监督学习使系统能够从标记数据中学习并预测新数据。算法学习输入和输出之间的映射函数，并能够泛化到新的实例。</p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-primary-700 dark:text-primary-400">监督学习的工作原理</h3>
+                    <p class="mb-6">算法通过标记数据训练模型来预测新的标签。训练过程中不断调整参数以减少预测误差。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">监督学习主要分两类</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-tag text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">分类</span>：预测离散类别（如垃圾邮件检测）
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chart-line text-blue-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">回归</span>：预测连续值（如房价预测）
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">核心流程图</h4>
+                            <div class="relative h-36 flex items-center justify-center">
+                                <!-- 简化的流程图 -->
+                                <div class="flex flex-col md:flex-row items-center justify-between w-full px-4">
+                                    <div class="text-center mb-2 md:mb-0">
+                                        <div class="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900 mx-auto flex items-center justify-center mb-1">
+                                            <i class="fas fa-database text-blue-600 dark:text-blue-300"></i>
+                                        </div>
+                                        <div class="text-xs">训练数据</div>
+                                    </div>
+                                    <i class="fas fa-arrow-right my-1 md:my-0 md:mx-1 transform md:transform-none rotate-90 md:rotate-0"></i>
+                                    <div class="text-center mb-2 md:mb-0">
+                                        <div class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900 mx-auto flex items-center justify-center mb-1">
+                                            <i class="fas fa-cogs text-green-600 dark:text-green-300"></i>
+                                        </div>
+                                        <div class="text-xs">模型训练</div>
+                                    </div>
+                                    <i class="fas fa-arrow-right my-1 md:my-0 md:mx-1 transform md:transform-none rotate-90 md:rotate-0"></i>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900 mx-auto flex items-center justify-center mb-1">
+                                            <i class="fas fa-check-circle text-purple-600 dark:text-purple-300"></i>
+                                        </div>
+                                        <div class="text-xs">预测</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4">监督学习的核心概念</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mb-8">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-table text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">训练数据</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">标记数据，包含输入特征和对应输出标签。其质量和数量影响模型性能。</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-puzzle-piece text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">特征</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">数据的可测量属性，作为模型的输入。特征选择和工程是关键步骤。</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-tag text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">标签</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">训练数据对应的已知结果，是模型需要预测的"正确答案"。</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-cube text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">模型</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">特征与标签关系的数学表达。可以是简单线性模型或复杂神经网络。</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-dumbbell text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">训练</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">输入训练数据，优化模型参数，减少预测误差的过程。</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-crystal-ball text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">预测</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">使用训练后的模型预测新数据的标签。</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4">模型评估与优化</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">评估指标</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <i class="fas fa-bullseye text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">准确率</span>：正确预测的比例
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-bullseye text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">精确率</span>：正预测中真正例的比例
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-bullseye text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">召回率</span>：实际正例中正确预测的比例
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-bullseye text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">F1分数</span>：精确率与召回率的调和平均
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">优化技术</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <i class="fas fa-exchange-alt text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">交叉验证</span>：评估模型泛化能力的技术
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-balance-scale text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">正则化</span>：防止过拟合的技术，包括L1和L2正则化
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">过拟合防控</span>：模型对训练数据学习过度，泛化能力下降
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-compress-arrows-alt text-primary-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">欠拟合检测</span>：模型过于简单，无法捕捉数据模式
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 线性回归 -->
+            <section id="linear-regression" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-chart-line"></i></span>
+                    线性回归
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">线性回归是最基础的监督学习算法，旨在建立输入特征与连续目标变量之间的线性关系。其目标是找到"最佳拟合线"，使预测值与实际值之间的平方差和最小。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">什么是回归？</h3>
+                            <p class="mb-4">回归分析预测连续目标变量，输出值可以在一个范围内取任何值。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">回归示例</h4>
+                            <ul class="space-y-1 mb-4 ml-5 list-disc text-gray-600 dark:text-gray-300">
+                                <li>预测房价</li>
+                                <li>预测气温</li>
+                                <li>估算网站访客数量</li>
+                            </ul>
+                            
+                            <p class="text-gray-600 dark:text-gray-300">线性回归假设变量间存在线性关系。</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <!-- 线性回归图示 -->
+                            <div class="mb-4 h-48 relative bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                                <div class="h-32 w-full relative">
+                                    <!-- 坐标轴 -->
+                                    <div class="absolute bottom-0 left-0 h-1 w-full bg-gray-400"></div>
+                                    <div class="absolute bottom-0 left-0 h-full w-1 bg-gray-400"></div>
+                                    
+                                    <!-- 散点 -->
+                                    <div class="absolute bottom-4 left-6 w-2 h-2 rounded-full bg-blue-500"></div>
+                                    <div class="absolute bottom-9 left-12 w-2 h-2 rounded-full bg-blue-500"></div>
+                                    <div class="absolute bottom-14 left-16 w-2 h-2 rounded-full bg-blue-500"></div>
+                                    <div class="absolute bottom-18 left-24 w-2 h-2 rounded-full bg-blue-500"></div>
+                                    <div class="absolute bottom-23 left-32 w-2 h-2 rounded-full bg-blue-500"></div>
+                                    
+                                    <!-- 回归线 -->
+                                    <div class="absolute bottom-0 left-0 h-32 w-40 border-t-2 border-red-500 transform origin-bottom-left rotate-30"></div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-sm text-gray-600 dark:text-gray-300">线性回归寻找最佳拟合线</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">y = mx + c</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">简单线性回归</h3>
+                            <p class="mb-4">一个预测变量和一个目标变量。关系用线性方程表示：</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                y = mx + c
+                            </div>
+                            <p class="mb-4">其中，y是目标变量，x是预测变量，m是斜率，c是截距。</p>
+                            <p class="mb-4">算法的目标是找到最优的m和c，使预测误差最小化。常用普通最小二乘法（OLS）。</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">多元线性回归</h3>
+                            <p class="mb-4">有多个预测变量。方程扩展为：</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                y = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ
+                            </div>
+                            <p class="mb-4">其中，b₀是截距，b₁, b₂, ..., bₙ是各预测变量的系数。</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">普通最小二乘法（OLS）</h3>
+                    <p class="mb-4">OLS估计线性回归系数的最优值。目标是最小化残差平方和（RSS）。换句话说，找到一条直线，使数据点到线的"平方距离"之和最小。</p>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg mb-8">
+                        <h4 class="font-medium mb-4 text-primary-600 dark:text-primary-300">OLS过程</h4>
+                        <ol class="space-y-2 ml-6 list-decimal">
+                            <li>计算残差（预测值与实际值之差）</li>
+                            <li>残差平方（消除正负号）</li>
+                            <li>求和（RSS）</li>
+                            <li>最小化RSS：调整系数找到最小值</li>
+                        </ol>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">线性回归的假设</h3>
+                    <ul class="space-y-2 mb-4 ml-5 list-disc">
+                        <li><span class="font-medium">线性</span>：预测变量与目标变量之间存在线性关系</li>
+                        <li><span class="font-medium">独立性</span>：观测值相互独立</li>
+                        <li><span class="font-medium">同方差性</span>：误差的方差在所有预测变量值上恒定</li>
+                        <li><span class="font-medium">正态性</span>：误差服从正态分布</li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">应用前需验证这些假设。</p>
+                </div>
+            </section>
+
+            <!-- 逻辑回归 -->
+            <section id="logistic-regression" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-percentage"></i></span>
+                    逻辑回归
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">逻辑回归是一种分类算法，用于预测二元结果（0/1）。尽管名称中包含"回归"，但它实际上是一种分类方法。</p>
+                    <p class="mb-6">逻辑回归通过sigmoid函数建模目标属于某类的概率，将输入特征的线性组合映射为0到1之间的值。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">什么是分类？</h3>
+                            <p class="mb-4">分类将数据点分配到特定类别，输出离散标签。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">分类示例</h4>
+                            <ul class="space-y-1 mb-4 ml-5 list-disc text-gray-600 dark:text-gray-300">
+                                <li>识别欺诈交易</li>
+                                <li>分类动物图像</li>
+                                <li>诊断疾病</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">逻辑回归的工作原理</h3>
+                            <p class="mb-4">逻辑回归输出概率分数。通过sigmoid函数将线性组合映射到0-1范围。</p>
+                            
+                            <!-- Sigmoid函数图示 -->
+                            <div class="h-36 relative bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                                <div class="h-full w-full relative">
+                                    <!-- 坐标轴 -->
+                                    <div class="absolute top-1/2 left-0 h-1 w-full bg-gray-400"></div>
+                                    <div class="absolute top-0 left-1/4 h-full w-1 bg-gray-400"></div>
+                                    
+                                    <!-- Sigmoid曲线 -->
+                                    <div class="absolute top-0 left-0 h-full w-full">
+                                        <svg viewBox="0 0 100 60" class="h-full w-full">
+                                            <path d="M0,50 C20,50 25,10 50,10 C75,10 80,50 100,50" fill="none" stroke="#3B82F6" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    
+                                    <!-- 标记 -->
+                                    <div class="absolute top-2 right-4 text-xs text-gray-600 dark:text-gray-300">y = 1</div>
+                                    <div class="absolute bottom-2 right-4 text-xs text-gray-600 dark:text-gray-300">y = 0</div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Sigmoid函数</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">P(x) = 1 / (1 + e⁻ᶻ)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">Sigmoid函数</h3>
+                            <p class="mb-2">S形函数，表达式：</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                P(x) = 1 / (1 + e⁻ᶻ)
+                            </div>
+                            <p class="mb-4">其中z是特征与权重的线性组合：z = w₀ + w₁x₁ + w₂x₂ + ... + wₙxₙ</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">决策边界</h3>
+                            <p class="mb-4">逻辑回归的关键概念。在二维空间中表现为一条直线；在高维中表现为超平面，划分正类和负类。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">根据预测概率划分类别</h4>
+                            <p class="mb-2">逻辑回归通过预测概率进行分类。关键是设置阈值概率。</p>
+                            
+                            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 text-sm">
+                                <p class="mb-1">阈值默认0.5，可调整：</p>
+                                <ul class="ml-4 list-disc">
+                                    <li>若 P(x) > 阈值，归为正类（"1"）</li>
+                                    <li>若 P(x) < 阈值，归为负类（"0"）</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <p class="mb-4">逻辑回归有以下假设：</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">二元结果</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">目标变量须为二分类</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">对数几率线性</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">预测变量与结果对数几率间呈线性关系</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">无多重共线性</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">预测变量间避免高度相关</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">样本量充足</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">每类样本数应足够多</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300">应用前验证这些假设。</p>
+                </div>
+            </section>
+
+            <!-- 决策树 -->
+            <section id="decision-tree" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-sitemap"></i></span>
+                    决策树
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">决策树是一种监督学习算法，适用于分类和回归任务。它以树状结构表示决策过程，直观易懂。通过学习一系列决策规则，决策树可以预测目标变量的值。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">决策树的结构</h3>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-square text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">根节点</span>：树的起点，包含整个数据集
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-square text-blue-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">内部节点</span>：代表特征或属性，根据规则分支
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-square text-purple-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">叶节点</span>：终端节点，表示预测结果
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-4 text-primary-600 dark:text-primary-300">决策树示例</h4>
+                            <!-- 决策树示例图 -->
+                            <div class="h-64 relative bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center p-4">
+                                <div class="w-full h-full relative">
+                                    <!-- 第一层节点 -->
+                                    <div class="absolute top-2 left-1/2 transform -translate-x-1/2">
+                                        <div class="w-20 h-10 rounded bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center text-xs">
+                                            天气如何?
+                                        </div>
+                                    </div>
+
+                                    <!-- 第一层连接线 -->
+                                    <div class="absolute top-12 left-1/2 w-40 h-px bg-gray-400 transform -translate-x-1/2"></div>
+                                    <div class="absolute top-12 left-[26%] h-10 border-l border-gray-400"></div>
+                                    <div class="absolute top-12 left-[74%] h-10 border-l border-gray-400"></div>
+
+                                    <!-- 第二层节点 -->
+                                    <div class="absolute top-20 left-[30%] transform -translate-x-1/2">
+                                        <div class="w-20 h-10 rounded bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center text-xs">
+                                            温度?
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-20 left-[70%] transform -translate-x-1/2">
+                                        <div class="w-20 h-10 rounded bg-purple-100 dark:bg-purple-900 border border-purple-500 flex items-center justify-center text-xs">
+                                            不打球
+                                        </div>
+                                    </div>
+
+                                    <!-- 第二层连接线 -->
+                                    <div class="absolute top-[120px] left-[20%] w-20 h-px bg-gray-400"></div>
+                                    <div class="absolute top-[120px] left-[20%] h-10 border-l border-gray-400"></div>
+                                    <div class="absolute top-[120px] left-[40%] h-10 border-l border-gray-400"></div>
+
+                                    <!-- 第三层节点 -->
+                                    <div class="absolute top-[170px] left-[20%] transform -translate-x-1/2">
+                                        <div class="w-20 h-10 rounded bg-purple-100 dark:bg-purple-900 border border-purple-500 flex items-center justify-center text-xs">
+                                            打球
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-[170px] left-[40%] transform -translate-x-1/2">
+                                        <div class="w-20 h-10 rounded bg-purple-100 dark:bg-purple-900 border border-purple-500 flex items-center justify-center text-xs">
+                                            不打球
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 图注 -->
+                            <div class="text-center mt-4">
+                                <p class="text-sm text-gray-600 dark:text-gray-300">"打网球" 决策树示例</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">构建决策树</h3>
+                    <p class="mb-6">核心是在每个节点选择最佳特征来分割数据。依据是像基尼不纯度或信息增益这样的指标，目标是生成纯度更高的子集。</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">基尼不纯度</h4>
+                            <p class="text-sm mb-2">衡量随机抽取元素被错误分类的概率，值越低表示越纯。</p>
+                            <div class="math-block bg-white dark:bg-gray-800 p-2 rounded text-center text-sm">
+                                Gini = 1 - Σ pᵢ²
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">熵</h4>
+                            <p class="text-sm mb-2">衡量数据集的无序度，值越低表示越同质。</p>
+                            <div class="math-block bg-white dark:bg-gray-800 p-2 rounded text-center text-sm">
+                                Entropy = - Σ pᵢ * log₂(pᵢ)
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">信息增益</h4>
+                            <p class="text-sm mb-2">衡量分割后熵的减少量，选择增益最高的特征进行分割。</p>
+                            <div class="math-block bg-white dark:bg-gray-800 p-2 rounded text-center text-sm">
+                                InfoGain(S, A) = Entropy(S) - Σ (|Sᵥ| / |S|) * Entropy(Sᵥ)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">构建过程</h4>
+                    <p class="mb-4">从根节点开始，选择最佳特征作为内部节点，创建分支划分数据。过程递归进行，直到满足停止条件：</p>
+                    
+                    <ul class="space-y-1 mb-6 ml-5 list-disc">
+                        <li>达到最大深度</li>
+                        <li>节点包含最小样本数</li>
+			<li>节点内样本全部属于同一类（纯节点）</li>
+                    </ul>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">"打网球"示例：决策树的工作原理解析</h4>
+                    <p class="mb-6">数据集记录天气情况及是否打网球。特征包括：天气展望、温度、湿度、风力。目标变量是"打网球"（是/否）。决策树算法分析数据，找到最佳分割特征（基于信息增益或基尼不纯度）。例如，根节点可能基于"天气展望"生成三个分支。对每个子集继续分析最佳特征，递归进行直至满足停止条件，最终生成完整的树状结构。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <p class="mb-4">决策树对数据假设要求较低：</p>
+                    
+                    <ul class="space-y-1 mb-4 ml-5 list-disc">
+                        <li>无需线性假设</li>
+                        <li>无需正态性假设</li>
+                        <li>对异常值较为鲁棒</li>
+                    </ul>
+                    
+                    <p class="text-gray-600 dark:text-gray-300">这使得决策树具有较高的通用性。</p>
+                </div>
+            </section>
+
+            <!-- 朴素贝叶斯 -->
+            <section id="naive-bayes" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-calculator"></i></span>
+                    朴素贝叶斯
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">朴素贝叶斯（Naive Bayes）是一种基于概率的分类算法，基于贝叶斯定理。因其简单高效而广受欢迎，尤其在文本分类任务中表现出色。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">贝叶斯定理解析</h3>
+                            <p class="mb-4">贝叶斯定理提供了一种根据新证据更新信念（概率）的方法。它计算在给定证据B的情况下，假设A成立的条件概率。</p>
+                            
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                P(A|B) = (P(B|A) * P(A)) / P(B)
+                            </div>
+                            
+                            <p class="mb-2">其中：</p>
+                            <ul class="space-y-1 mb-4 ml-5 list-disc text-sm">
+                                <li>P(A|B)：后验概率 - 在观察到B后，A的概率</li>
+                                <li>P(B|A)：似然概率 - 在A为真时观察到B的概率</li>
+                                <li>P(A)：先验概率 - A的初始概率</li>
+                                <li>P(B)：边缘概率 - B的概率</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">贝叶斯定理直观理解</h4>
+                            
+                            <div class="bg-white dark:bg-gray-800 p-4 rounded-lg mb-4">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-2">
+                                        <i class="fas fa-question text-blue-600 dark:text-blue-300"></i>
+                                    </div>
+                                    <p class="text-sm">如果90%的癌症患者测试呈阳性，5%的健康人也测试呈阳性，且总人群中1%有癌症，那么测试呈阳性的人真正患癌的概率是多少？</p>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-2">
+                                        <i class="fas fa-check text-green-600 dark:text-green-300"></i>
+                                    </div>
+                                    <p class="text-sm">应用贝叶斯定理：P(癌症|阳性) = (P(阳性|癌症) * P(癌症)) / P(阳性) = (0.9 * 0.01) / (0.9 * 0.01 + 0.05 * 0.99) ≈ 15.4%</p>
+                                </div>
+                            </div>
+                            
+                            <p class="text-sm text-gray-600 dark:text-gray-300">这个例子展示了如何使用贝叶斯定理更新我们对事件概率的判断。尽管测试准确率很高，但因为疾病本身很罕见（先验概率低），导致阳性预测值并不高。</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">朴素贝叶斯的工作原理</h3>
+                    <p class="mb-4">基于贝叶斯定理，朴素贝叶斯预测数据点属于某一类别的概率。"朴素"指的是假设特征之间条件独立。</p>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg mb-8">
+                        <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">工作流程</h4>
+                        <ol class="space-y-2 ml-6 list-decimal">
+                            <li>计算先验概率 P(类别)</li>
+                            <li>计算似然概率 P(特征|类别)</li>
+                            <li>应用贝叶斯定理计算后验概率 P(类别|特征) = (P(特征|类别) * P(类别)) / P(特征)</li>
+                            <li>预测类别：将数据点归类到后验概率最高的类别</li>
+                        </ol>
+                        <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">尽管特征独立的假设在现实中往往不成立，但朴素贝叶斯在实践中仍表现出色。</p>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">朴素贝叶斯分类器的类型</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">高斯朴素贝叶斯</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">用于连续特征，假定特征符合高斯（正态）分布</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">多项式朴素贝叶斯</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">用于离散特征（如文档中的词频）</p>
+                        </div>
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">伯努利朴素贝叶斯</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">专为二元特征设计（如词是否出现）</p>
+                        </div>
+                    </div>
+                    <p class="mb-6">选择哪种变体取决于数据特性。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">特征独立性</span>：核心假设，简化计算过程
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">数据分布</span>：分类器选择取决于特征分布假设
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">足够的训练数据</span>：有助于更准确地估计概率
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">应用前需验证这些假设。</p>
+                </div>
+            </section>
+
+            <!-- 支持向量机 -->
+            <section id="svm" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-border-all"></i></span>
+                    支持向量机（SVM）
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">支持向量机（SVM）是一种监督学习算法，适用于分类和回归任务。它特别擅长处理高维数据以及复杂的非线性关系。SVM的目标是找到最优超平面，最大化不同类别数据点之间的间隔。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">最大化间隔</h3>
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">SVM的关键在于找到能最大化间隔的超平面。"间隔"是指超平面与各类最近点（支持向量）之间的距离。</p>
+                            <p class="mb-4">最大化间隔有助于构建稳健的决策边界，提高模型的泛化能力。</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <!-- SVM最大间隔图示 -->
+                            <div class="h-40 relative bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                                <div class="w-full h-full relative">
+                                    <!-- 散点 - 类别1 -->
+                                    <div class="absolute top-1/4 left-1/4 w-3 h-3 rounded-full bg-blue-500"></div>
+                                    <div class="absolute top-1/5 left-1/3 w-3 h-3 rounded-full bg-blue-500"></div>
+                                    <div class="absolute top-1/3 left-1/5 w-3 h-3 rounded-full bg-blue-500"></div>
+                                    <div class="absolute top-1/6 left-1/6 w-3 h-3 rounded-full bg-blue-500"></div>
+                                    
+                                    <!-- 散点 - 类别2 -->
+                                    <div class="absolute bottom-1/4 right-1/4 w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="absolute bottom-1/5 right-1/3 w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="absolute bottom-1/3 right-1/5 w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="absolute bottom-1/6 right-1/6 w-3 h-3 rounded-full bg-red-500"></div>
+                                    
+                                    <!-- 决策边界 -->
+                                    <div class="absolute top-0 left-1/2 h-full w-0.5 bg-green-500 transform -translate-x-1/2 rotate-30"></div>
+                                    
+                                    <!-- 间隔边界 -->
+                                    <div class="absolute top-0 left-2/5 h-full w-0.5 bg-green-300 transform -translate-x-1/2 rotate-30"></div>
+                                    <div class="absolute top-0 left-3/5 h-full w-0.5 bg-green-300 transform -translate-x-1/2 rotate-30"></div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-2">
+                                <p class="text-sm text-gray-600 dark:text-gray-300">SVM寻找最大间隔超平面</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">线性SVM</h3>
+                            <p class="mb-4">当数据线性可分时使用。目标是找到最优超平面，最大化间隔，同时正确分类训练样本。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">寻找最优超平面</h4>
+                            <p class="mb-2">最优超平面是能够最大化不同类别最近点之间距离的分隔线/面。最大化间隔旨在打造鲁棒的分类器。</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                w · x + b = 0
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">SVM通过训练优化参数w和b。</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">非线性SVM</h3>
+                            <p class="mb-4">当数据非线性可分时使用。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">核方法（Kernel Trick）</h4>
+                            <p class="mb-4">核方法使用核函数将数据映射到更高维的空间，使其在高维空间中线性可分。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">常用核函数类型</h4>
+                            <ul class="space-y-1 mb-4 ml-5 list-disc text-sm">
+                                <li>多项式核</li>
+                                <li>径向基函数（RBF）核：最通用</li>
+                                <li>Sigmoid核</li>
+                            </ul>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">选择合适的核函数需要考虑数据特性。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">图像分类应用</h4>
+                            <p class="text-sm mb-4">非线性SVM特别适用于图像分类等复杂模式识别任务。</p>
+                            <div class="flex justify-center">
+                                <div class="bg-white dark:bg-gray-800 p-3 rounded-lg inline-flex items-center">
+                                    <i class="fas fa-image text-2xl mr-3 text-blue-500"></i>
+                                    <i class="fas fa-arrow-right text-gray-400 mx-3"></i>
+                                    <i class="fas fa-cogs text-2xl mr-3 text-green-500"></i>
+                                    <i class="fas fa-arrow-right text-gray-400 mx-3"></i>
+                                    <i class="fas fa-tag text-2xl text-purple-500"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">SVM优化原理</h4>
+                            <p class="text-sm mb-2">约束优化问题：</p>
+                            <div class="math-block bg-white dark:bg-gray-800 p-2 rounded text-center text-sm">
+                                最小化 1/2 ||w||²<br>
+                                约束条件: ∀i, yᵢ(w·xᵢ + b) ≥ 1
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">算法特性优势</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">无分布假设</span>：不假设数据遵循特定分布
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">高维适应性</span>：在高维空间中表现良好
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">异常值鲁棒性</span>：对噪声和异常值相对较为鲁棒
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">SVM是解决困难分类和回归问题的核心工具。</p>
+                </div>
+            </section>
+
+            <!-- 无监督学习算法 -->
+            <section id="unsupervised-intro" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-cubes"></i></span>
+                    无监督学习算法
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">无监督学习是探索未标注数据的过程，旨在揭示潜在的模式、结构和关联。与监督学习不同，无监督学习没有预定义的标签。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">算法工作原理</h3>
+                            <p class="mb-4">无监督学习算法识别数据中的相似性、差异性和潜在模式：</p>
+                            <ul class="space-y-2 mb-4 ml-5 list-disc">
+                                <li>将相似的数据点聚类或聚合</li>
+                                <li>精简变量维度，保留核心信息</li>
+                                <li>检测异常或不寻常的数据点</li>
+                            </ul>
+                            <p class="text-gray-600 dark:text-gray-300">在标注数据稀缺的情况下，无监督学习特别有价值。</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">主要任务类型</h3>
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300 flex items-center">
+                                        <i class="fas fa-object-group mr-2"></i>聚类分析
+                                    </h4>
+                                    <p class="text-sm mb-2">根据相似性自动分组数据点</p>
+                                    <ul class="text-xs text-gray-600 dark:text-gray-300 ml-5 list-disc">
+                                        <li>按主题归类文献</li>
+                                        <li>按消费行为划分用户</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300 flex items-center">
+                                        <i class="fas fa-compress-arrows-alt mr-2"></i>维度约简
+                                    </h4>
+                                    <p class="text-sm mb-2">降低特征维度，保留核心信息</p>
+                                    <ul class="text-xs text-gray-600 dark:text-gray-300 ml-5 list-disc">
+                                        <li>报告提炼摘要</li>
+                                        <li>图像有损压缩</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300 flex items-center">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>异常检测
+                                    </h4>
+                                    <p class="text-sm mb-2">识别显著偏离常规模式的异常点</p>
+                                    <ul class="text-xs text-gray-600 dark:text-gray-300 ml-5 list-disc">
+                                        <li>金融风控伪钞识别</li>
+                                        <li>信用卡反欺诈</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">核心概念体系</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-database text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">无标注数据</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">无监督学习的基础。算法依赖数据的固有特征，而非外部标签。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-ruler-combined text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">相似性度量</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">量化数据点之间相似程度的工具：</p>
+                            <div class="mt-2 text-xs">
+                                <table class="w-full">
+                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                        <td class="py-1">欧氏距离</td>
+                                        <td class="py-1 text-right">多维空间直线距离</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                        <td class="py-1">余弦相似度</td>
+                                        <td class="py-1 text-right">特征向量夹角的余弦值</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1">曼哈顿距离</td>
+                                        <td class="py-1 text-right">坐标绝对差之和</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-object-group text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">聚类特性评估</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">衡量聚类质量：</p>
+                            <ul class="mt-2 space-y-1 ml-4 list-disc text-xs">
+                                <li><span class="font-medium">内聚度</span>：类内相似度</li>
+                                <li><span class="font-medium">分离度</span>：类间差异度</li>
+                                <li><span class="font-medium">评估工具</span>：轮廓系数、戴维斯-堡丁指数</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-cube text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">维度问题</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">高维数据的挑战：</p>
+                            <ul class="mt-2 space-y-1 ml-4 list-disc text-xs">
+                                <li><span class="font-medium">维度灾难</span>：高维数据的挑战，包括计算复杂、数据稀疏</li>
+                                <li><span class="font-medium">本征维度</span>：数据真实信息含量的潜在维度，降维目标是保持本征维度</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-exclamation-circle text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">异常值处理</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">识别非典型数据点：</p>
+                            <ul class="mt-2 space-y-1 ml-4 list-disc text-xs">
+                                <li><span class="font-medium">异常点</span>：显著偏离正常模式的数据点</li>
+                                <li><span class="font-medium">离群值</span>：与主体分布极度偏离的观测点，需区分错误（剔除）或特殊现象</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-balance-scale text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">特征标准化</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">确保不同量纲特征的可比性：</p>
+                            <div class="mt-2 text-xs">
+                                <table class="w-full">
+                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                        <td class="py-1">极差归一化</td>
+                                        <td class="py-1 text-right">(x - min) / (max - min)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1">Z-score标准化</td>
+                                        <td class="py-1 text-right">(x - μ) / σ</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- K-Means聚类 -->
+            <section id="kmeans" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-th-large"></i></span>
+                    K-Means聚类
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">K-Means聚类是将数据集按相似性（距离）划分为K个簇的无监督算法。它是最常用的聚类算法之一。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">算法步骤</h3>
+                            <p class="mb-3">K-Means是一种迭代算法，目标是最小化簇内方差。</p>
+                            
+                            <ol class="space-y-2 ml-6 list-decimal mb-4">
+                                <li><span class="font-medium">初始化</span>：随机选择K个点作为初始簇中心</li>
+                                <li><span class="font-medium">分配</span>：将各点分配至最近的簇中心</li>
+                                <li><span class="font-medium">更新</span>：重新计算簇中心（簇内所有点的平均值）</li>
+                                <li><span class="font-medium">迭代</span>：重复步骤2和3，直到簇中心稳定</li>
+                            </ol>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">欧氏距离</h4>
+                            <p class="text-sm mb-2">衡量多维空间两点之间的直线距离。公式：</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-2 rounded text-center text-sm">
+                                d(x, y) = √(Σ(xᵢ - yᵢ)²)
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <!-- K-Means迭代过程图示 -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <div class="h-24 bg-white dark:bg-gray-800 rounded-lg p-2 mb-2 relative">
+                                        <!-- 步骤1图示：初始簇心 -->
+                                        <div class="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-red-500 ring-2 ring-red-300"></div>
+                                        <div class="absolute bottom-1/3 right-1/3 w-2 h-2 rounded-full bg-blue-500 ring-2 ring-blue-300"></div>
+                                        
+                                        <!-- 数据点 -->
+                                        <div class="absolute top-2/5 left-1/5 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                        <div class="absolute top-1/6 left-1/3 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                        <div class="absolute top-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                        <div class="absolute bottom-1/4 left-1/6 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                        <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                        <div class="absolute bottom-1/5 right-1/3 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                    </div>
+                                    <p class="text-xs text-center">1. 初始簇中心</p>
+                                </div>
+                                <div>
+                                    <div class="h-24 bg-white dark:bg-gray-800 rounded-lg p-2 mb-2 relative">
+                                        <!-- 步骤2图示：分配 -->
+                                        <div class="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-red-500 ring-2 ring-red-300"></div>
+                                        <div class="absolute bottom-1/3 right-1/3 w-2 h-2 rounded-full bg-blue-500 ring-2 ring-blue-300"></div>
+                                        
+                                        <!-- 数据点 - 按簇着色 -->
+                                        <div class="absolute top-2/5 left-1/5 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/6 left-1/3 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/4 left-1/6 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/5 right-1/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                    </div>
+                                    <p class="text-xs text-center">2. 分配到最近簇</p>
+                                </div>
+                                <div>
+                                    <div class="h-24 bg-white dark:bg-gray-800 rounded-lg p-2 mb-2 relative">
+                                        <!-- 步骤3图示：更新簇心 -->
+                                        <div class="absolute top-1/3 left-1/4 w-2 h-2 rounded-full bg-red-500 ring-2 ring-red-300"></div>
+                                        <div class="absolute bottom-1/4 right-1/3 w-2 h-2 rounded-full bg-blue-500 ring-2 ring-blue-300"></div>
+                                        
+                                        <!-- 数据点 - 按簇着色 -->
+                                        <div class="absolute top-2/5 left-1/5 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/6 left-1/3 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/4 left-1/6 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/5 right-1/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                    </div>
+                                    <p class="text-xs text-center">3. 更新簇中心</p>
+                                </div>
+                                <div>
+                                    <div class="h-24 bg-white dark:bg-gray-800 rounded-lg p-2 mb-2 relative">
+                                        <!-- 步骤4图示：最终结果 -->
+                                        <div class="absolute top-1/3 left-1/4 w-2 h-2 rounded-full bg-red-500 ring-2 ring-red-300"></div>
+                                        <div class="absolute bottom-1/4 right-1/3 w-2 h-2 rounded-full bg-blue-500 ring-2 ring-blue-300"></div>
+                                        
+                                        <!-- 数据点 - 最终分配 -->
+                                        <div class="absolute top-2/5 left-1/5 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/6 left-1/3 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute top-1/3 left-2/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/4 left-1/6 w-1.5 h-1.5 rounded-full bg-red-400"></div>
+                                        <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        <div class="absolute bottom-1/5 right-1/3 w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                                        
+                                        <!-- 簇边界示意 -->
+                                        <div class="absolute inset-0 border-r border-dashed border-gray-400"></div>
+                                    </div>
+                                    <p class="text-xs text-center">4. 迭代至收敛</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">选择最佳K值</h3>
+                    <p class="mb-4">确定最佳簇数K至关重要。没有通用方法，需结合技术和领域知识。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">肘部法则（Elbow Method）</h4>
+                            <p class="mb-3">图形技术，可视化簇数与簇内平方和（WCSS）关系，辅助估计最佳K。</p>
+                            
+                            <ol class="space-y-1 ml-6 list-decimal text-sm">
+                                <li>在K值范围内运行K-Means</li>
+                                <li>计算WCSS（簇内总方差）</li>
+                                <li>绘制WCSS与K值对比图</li>
+                                <li>识别"肘点"：图中WCSS下降速度显著放缓处，通常为较好K值</li>
+                            </ol>
+                            
+                            <!-- 肘部法则图示 -->
+                            <div class="mt-4 h-36 bg-white dark:bg-gray-800 rounded-lg p-2 relative">
+                                <div class="absolute bottom-0 left-0 h-1 w-full bg-gray-400"></div>
+                                <div class="absolute bottom-0 left-0 h-full w-1 bg-gray-400"></div>
+                                
+                                <!-- 绘制曲线 -->
+                                <svg class="h-full w-full" viewBox="0 0 100 80">
+                                    <path d="M0,10 C10,30 20,40 30,50 C40,60 50,65 100,70" fill="none" stroke="#3B82F6" stroke-width="2"/>
+                                    
+                                    <!-- 标记肘点 -->
+                                    <circle cx="30" cy="50" r="3" fill="#EF4444"/>
+                                </svg>
+                                
+                                <div class="absolute bottom-4 left-0 w-full text-center text-xs">K值</div>
+                                <div class="absolute top-0 left-4 transform -rotate-90 origin-left text-xs">WCSS</div>
+                                <div class="absolute top-1/2 left-1/3 text-xs text-red-500">肘点</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">轮廓分析（Silhouette Analysis）</h4>
+                            <p class="mb-3">提供量化评估不同K值的方法。衡量点与其自身簇及其他簇的相似度。</p>
+                            
+                            <ol class="space-y-1 ml-6 list-decimal text-sm">
+                                <li>在K值范围内运行K-Means</li>
+                                <li>计算轮廓系数（范围-1到1）：
+                                    <ul class="ml-4 list-disc text-xs mt-1">
+                                        <li>接近1：分配良好</li>
+                                        <li>接近0：位于边界</li>
+                                        <li>接近-1：可能错分</li>
+                                    </ul>
+                                </li>
+                                <li>计算平均轮廓系数</li>
+                                <li>选择得分最高的K值</li>
+                            </ol>
+                            
+                            <div class="mt-4 flex justify-center">
+                                <div class="bg-white dark:bg-gray-800 p-2 rounded-lg inline-flex flex-col items-center">
+                                    <div class="text-xs mb-1">轮廓系数范围</div>
+                                    <div class="w-full h-6 bg-gradient-to-r from-red-500 via-yellow-400 to-green-500 rounded-md relative">
+                                        <div class="absolute inset-y-0 left-0 flex items-center pl-1 text-xs text-white">-1</div>
+                                        <div class="absolute inset-y-0 left-1/2 flex items-center justify-center transform -translate-x-1/2 text-xs text-black">0</div>
+                                        <div class="absolute inset-y-0 right-0 flex items-center pr-1 text-xs text-white">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">领域知识与其他考虑因素</h4>
+                    <p class="mb-4">领域知识常是选择K值的关键。需考虑问题背景和所需的粒度级别。其他因素包括计算成本和可解释性。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">簇的形状</span>：假设簇呈球形且大小相近
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">特征尺度</span>：对特征尺度敏感，需进行标准化
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">异常值</span>：对异常值敏感，可能影响簇中心位置
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 主成分分析 -->
+            <section id="pca" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-compress-arrows-alt"></i></span>
+                    主成分分析（PCA）
+                </h2>
+
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">主成分分析（PCA）是一种降维技术，将高维数据转换为低维表示，同时保留最多的信息。PCA通过识别主成分（捕捉最大方差的原始特征线性组合）来实现这一目标。PCA主要用于特征提取、数据可视化和降噪。</p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">关键概念</h3>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-chart-bar text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">方差</span>：衡量数据点分布程度
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-link text-blue-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">协方差</span>：衡量两变量之间的关系
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-vector-square text-purple-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">特征向量和特征值</span>：特征向量表示主成分方向，特征值表示解释方差大小
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">PCA算法步骤</h4>
+                            <ol class="space-y-1 ml-6 list-decimal">
+                                <li>标准化数据</li>
+                                <li>计算协方差矩阵</li>
+                                <li>计算特征向量和特征值</li>
+                                <li>对特征向量排序</li>
+                                <li>选择主成分（前k个特征向量）</li>
+                                <li>转换数据：将数据投影到选定主成分上</li>
+                            </ol>
+                        </div>
+
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <!-- PCA图示 -->
+                            <div class="h-48 bg-white dark:bg-gray-800 rounded-lg p-2 mb-3 relative">
+                                <!-- 散点 -->
+                                <div class="absolute top-1/4 left-1/4 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-1/5 left-3/10 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-3/10 left-2/5 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-2/5 left-4/10 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-3/5 left-6/10 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-7/10 left-7/10 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+                                <div class="absolute top-4/5 left-8/10 w-1.5 h-1.5 rounded-full bg-gray-500"></div>
+
+                                <!-- 原坐标轴 -->
+                                <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-300"></div>
+                                <div class="absolute top-0 left-1/2 w-0.5 h-full bg-gray-300"></div>
+
+                                <!-- 主成分方向 -->
+                                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                                    <div class="w-3/4 h-0.5 bg-red-500 transform rotate-30"></div>
+                                </div>
+                                <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                                    <div class="w-1/2 h-0.5 bg-blue-500 transform -rotate-60"></div>
+                                </div>
+
+                                <!-- 标签 -->
+                                <div class="absolute bottom-2 right-2 text-xs">
+                                    <div class="flex items-center">
+                                        <div class="w-3 h-0.5 bg-red-500 mr-1"></div>
+                                        <span>第一主成分</span>
+                                    </div>
+                                    <div class="flex items-center mt-1">
+                                        <div class="w-3 h-0.5 bg-blue-500 mr-1"></div>
+                                        <span>第二主成分</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-center text-gray-600 dark:text-gray-300">
+                                PCA寻找最大方差方向作为主成分
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">特征值和特征向量</h3>
+                            <p class="mb-4">特征向量是在线性变换时方向不变的特殊向量：A * v = λ * v。特征值(λ)表示缩放因子。</p>
+
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">主成分分析中的特征值方程</h4>
+                            <p class="mb-2">求解特征值方程获取主成分：</p>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                C * v = λ * v
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">其中，C是协方差矩阵，v是特征向量（主成分方向），λ是特征值（解释方差）。</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">求解特征值方程</h3>
+                            <ul class="space-y-2 mb-4 ml-5 list-disc">
+                                <li><span class="font-medium">特征值分解（Eigendecomposition）</span></li>
+                                <li><span class="font-medium">奇异值分解（SVD）</span>：数值上更稳定</li>
+                            </ul>
+
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">选择主成分</h4>
+                            <p class="mb-4">按特征值降序排列。前k个特征向量构成新特征空间。原始数据X转为低维表示Y：Y = X * V，其中V是所选特征向量矩阵。</p>
+
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">选择成分数量</h4>
+                            <p class="mb-2">常用方法是绘制解释方差比例与成分数关系图（scree plot）。选择保留足够信息（如95%）的成分数。</p>
+
+                            <!-- 解释方差图 -->
+                            <div class="h-48 bg-white dark:bg-gray-800 rounded-lg p-4 relative">
+                                <!-- 坐标轴 -->
+                                <div class="absolute bottom-8 left-[40px] h-32 w-px bg-gray-400"></div> <!-- Y轴 -->
+                                <div class="absolute bottom-8 left-[40px] w-[320px] h-px bg-gray-400"></div> <!-- X轴 -->
+
+                                <!-- 柱状图 -->
+                                <div class="absolute bottom-8 left-[70px] w-6 h-32 bg-blue-500 rounded-t"></div> <!-- PC1 -->
+                                <div class="absolute bottom-8 left-[120px] w-6 h-20 bg-blue-500 rounded-t"></div> <!-- PC2 -->
+                                <div class="absolute bottom-8 left-[170px] w-6 h-12 bg-blue-500 rounded-t"></div> <!-- PC3 -->
+                                <div class="absolute bottom-8 left-[220px] w-6 h-6 bg-blue-500 rounded-t"></div>  <!-- PC4 -->
+                                <div class="absolute bottom-8 left-[270px] w-6 h-4 bg-blue-500 rounded-t"></div>  <!-- PC5 -->
+
+                                <!-- 主成分数标签 -->
+                                <div class="absolute bottom-4 left-[68px] text-xs">PC1</div>
+                                <div class="absolute bottom-4 left-[118px] text-xs">PC2</div>
+                                <div class="absolute bottom-4 left-[168px] text-xs">PC3</div>
+                                <div class="absolute bottom-4 left-[218px] text-xs">PC4</div>
+                                <div class="absolute bottom-4 left-[268px] text-xs">PC5</div>
+
+                                <!-- 标题 & Y轴文字 -->
+                                <div class="absolute top-2 left-1/2 transform -translate-x-1/2 text-sm font-medium text-gray-700 dark:text-gray-200">
+                                    解释方差图
+                                </div>
+                                <div class="absolute top-24 left-5 transform -rotate-90 origin-top-left text-xs text-gray-700 dark:text-gray-300">
+                                    解释方差比例
+                                </div>
+                            </div>
+
+
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    </div>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">线性</span>：假设特征之间存在线性关系
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">相关性</span>：当特征之间存在相关性时效果最佳
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">尺度</span>：对特征尺度敏感，需进行标准化
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">PCA是强大的降维和数据分析技术，广泛应用于各领域。</p>
+                </div>
+            </section>
+
+            <!-- 异常检测 -->
+            <section id="anomaly-detection" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-exclamation-triangle"></i></span>
+                    异常检测
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">异常检测识别显著偏离正常行为的数据点（离群值），这些可能预示关键事件或问题。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">异常分类</h3>
+                            <p class="mb-3">异常可分为三类：</p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">点异常</h4>
+                                    <p class="text-sm">单个数据点明显不同于其他数据</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">上下文异常</h4>
+                                    <p class="text-sm">数据点在特定背景下异常</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">集体异常</h4>
+                                    <p class="text-sm">一组数据点共同偏离正常模式</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">异常检测技术</h3>
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">统计方法</h4>
+                                    <p class="text-sm">假定正常点遵循特定分布，识别偏离点（如Z-score等）</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">基于聚类方法</h4>
+                                    <p class="text-sm">识别不属于任何簇或属于小型稀疏簇的点</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">基于机器学习方法</h4>
+                                    <p class="text-sm">学习正常模式，识别不符合的点（如单类SVM、孤立森林、LOF）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">单类支持向量机</h3>
+                            <p class="mb-3">ML算法，学习包围正常数据点的边界，识别边界外点为异常。可用核函数处理非线性。</p>
+                            
+                            <!-- 单类SVM图示 -->
+                            <div class="h-36 bg-white dark:bg-gray-800 rounded-lg p-2 relative">
+                                <!-- 正常数据点 -->
+                                <div class="absolute top-1/4 left-1/4 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute top-1/5 left-1/3 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute top-1/3 left-1/5 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                
+                                <!-- 异常点 -->
+                                <div class="absolute top-3/4 right-1/4 w-2 h-2 rounded-full bg-red-500"></div>
+                                
+                                <!-- 决策边界 -->
+                                <div class="absolute top-1/2 left-1/2 w-20 h-20 rounded-full border-2 border-green-500 transform -translate-x-1/2 -translate-y-1/2"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">孤立森林</h3>
+                            <p class="mb-3">通过随机分割数据并构建孤立树隔离异常。异常点因"少而不同"路径较短。</p>
+
+                            <!-- 孤立森林图示 -->
+                            <div class="h-36 bg-white dark:bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center">
+                                <div class="relative w-full max-w-xs">
+                                    <!-- 简化的树结构 -->
+                                    <div class="flex justify-center">
+                                        <div class="w-8 h-8 rounded-full border-2 border-green-500 flex items-center justify-center">
+                                            <span class="text-xs">根</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between mt-2">
+                                        <div class="w-6 h-6 rounded-full border-2 border-blue-500 flex items-center justify-center">
+                                            <span class="text-xs">L</span>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-blue-500 flex items-center justify-center">
+                                            <span class="text-xs">R</span>
+                                        </div>
+                                    </div>
+                                    <!-- 树枝 -->
+                                    <div class="absolute top-8 left-1/2 h-4 w-px bg-gray-400 transform -translate-x-1/2"></div>
+                                    <div class="absolute top-10 left-1/3 w-1/3 h-px bg-gray-400"></div>
+
+                                    <!-- 异常点（短路径） -->
+                                    <div class="absolute top-16 left-1/4 transform -translate-x-1/2">
+                                        <div class="w-5 h-5 rounded-full bg-red-100 border border-red-500 flex items-center justify-center">
+                                            <i class="fas fa-exclamation-circle text-xs text-red-500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs mt-2 text-gray-600 dark:text-gray-300">异常点的路径通常较短</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">局部离群因子</h3>
+                            <p class="mb-3">基于密度算法，比较点的局部密度与其邻近点密度识别离群值。</p>
+                            
+                            <!-- LOF图示 -->
+                            <div class="h-36 bg-white dark:bg-gray-800 rounded-lg p-2 relative">
+                                <!-- 密集区域 -->
+                                <div class="absolute top-1/4 left-1/4 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute top-1/5 left-1/5 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute top-1/3 left-1/6 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute top-1/4 left-1/3 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                
+                                <!-- 稀疏区域 -->
+                                <div class="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                <div class="absolute bottom-1/4 right-1/3 w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                
+                                <!-- 异常点 -->
+                                <div class="absolute bottom-2/3 right-1/4 w-2 h-2 rounded-full bg-red-500"></div>
+                                
+                                <!-- 密度示意 -->
+                                <div class="absolute top-1/4 left-1/4 w-12 h-12 rounded-full border border-dashed border-green-300"></div>
+                                <div class="absolute bottom-1/3 right-1/3 w-10 h-10 rounded-full border border-dashed border-green-300"></div>
+                                <div class="absolute bottom-2/3 right-1/4 w-10 h-10 rounded-full border border-dashed border-red-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">局部可达密度</h4>
+                    <p class="mb-4">LOF关键概念，表示点p及其k个邻居的密度关系。公式：</p>
+                    <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4 text-sm">
+                        lrd(p) = 1 / (平均reach_dist(p, o))
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">分布假设</span>：部分方法假设正常点遵循特定分布
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">特征相关性</span>：特征间关系可能影响检测性能
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">数据标注</span>：部分ML方法需要标注数据进行训练
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">异常检测能够识别关键的异常模式，广泛应用于安全监控、欺诈检测等领域。</p>
+                </div>
+            </section>
+
+            <!-- 强化学习算法 -->
+            <section id="reinforcement-learning" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-gamepad"></i></span>
+                    强化学习算法
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">强化学习（RL）是一种学习方法，智能体（Agent）通过与环境互动，通过试错进行学习。系统通过接收奖励或惩罚反馈来指导学习过程。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">强化学习的工作原理</h3>
+                            <p class="mb-4">智能体执行行动，环境给予奖励或惩罚作为反馈，引导智能体学习最优策略（使累积奖励最大化）。RL算法分为：</p>
+                            
+                            <ul class="space-y-2 mb-4 ml-5 list-disc">
+                                <li><span class="font-medium">基于模型的RL</span>：学习环境模型，用于预测和规划</li>
+                                <li><span class="font-medium">无模型RL</span>：直接从经验中学习，不构建环境模型</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-center">
+                            <!-- 强化学习循环图示 -->
+                            <div class="h-48 bg-white dark:bg-gray-800 rounded-lg p-3 relative flex items-center justify-center">
+                                <div class="w-full max-w-xs">
+                                    <!-- 智能体 -->
+                                    <div class="absolute top-6 left-1/2 transform -translate-x-1/2">
+                                        <div class="w-20 h-12 rounded bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center">
+                                            <div class="text-sm font-medium">智能体</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 环境 -->
+                                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+                                        <div class="w-20 h-12 rounded bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center">
+                                            <div class="text-sm font-medium">环境</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 箭头：行动 -->
+                                    <div class="absolute top-1/2 left-1/4 transform -translate-y-1/2">
+                                        <div class="w-12 h-8 flex flex-col items-center">
+                                            <i class="fas fa-arrow-down text-blue-500"></i>
+                                            <span class="text-xs mt-1">行动</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 箭头：状态、奖励 -->
+                                    <div class="absolute top-1/2 right-1/4 transform -translate-y-1/2">
+                                        <div class="w-12 h-8 flex flex-col items-center">
+                                            <i class="fas fa-arrow-up text-green-500"></i>
+                                            <span class="text-xs mt-1">状态、奖励</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-center mt-2 text-gray-600 dark:text-gray-300">
+                                强化学习的基本交互循环
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">强化学习的核心概念</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-robot text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">智能体（Agent）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">学习者和决策者。目标是最大化长期累积奖励。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-globe text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">环境（Environment）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">智能体运行的外部系统。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-info-circle text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">状态（State）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">环境的当前情况。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-bolt text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">行动（Action）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">智能体影响环境的举动。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-star text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">奖励（Reward）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">环境的反馈，衡量行动的可取性。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-chess-king text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">策略（Policy）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">智能体从状态到行动的战略。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-chart-line text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">价值函数（Value Function）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">估计特定状态或行动的长期价值，分为状态价值函数和行动价值函数。</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-3 shadow-sm">
+                            <div class="flex items-center mb-1">
+                                <i class="fas fa-percentage text-primary-500 mr-2"></i>
+                                <h4 class="font-medium">折扣因子（Discount Factor, γ）</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300">决定未来回报的当前价值（0-1之间）。</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">Q-Learning</h3>
+                    <p class="mb-4">Q-learning是一种无模型RL算法，通过估计Q值学习最优策略。Q值表示在状态s下采取行动a，并在之后遵循最优策略的预期累积奖励。直接通过试错互动学习。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">Q表（Q-Table）</h4>
+                            <p class="mb-4">存储所有状态-行动对的Q值，指导决策。</p>
+                            
+                            <div class="overflow-auto">
+                                <table class="min-w-full text-sm">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr>
+                                            <th class="px-3 py-2 text-left">状态/行动</th>
+                                            <th class="px-3 py-2 text-center">左移</th>
+                                            <th class="px-3 py-2 text-center">右移</th>
+                                            <th class="px-3 py-2 text-center">上移</th>
+                                            <th class="px-3 py-2 text-center">下移</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                                        <tr>
+                                            <td class="px-3 py-2">状态1</td>
+                                            <td class="px-3 py-2 text-center">0.4</td>
+                                            <td class="px-3 py-2 text-center">0.7</td>
+                                            <td class="px-3 py-2 text-center">0.1</td>
+                                            <td class="px-3 py-2 text-center">0.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 py-2">状态2</td>
+                                            <td class="px-3 py-2 text-center">0.2</td>
+                                            <td class="px-3 py-2 text-center">0.9</td>
+                                            <td class="px-3 py-2 text-center">0.5</td>
+                                            <td class="px-3 py-2 text-center">0.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 py-2">状态3</td>
+                                            <td class="px-3 py-2 text-center">0.6</td>
+                                            <td class="px-3 py-2 text-center">0.3</td>
+                                            <td class="px-3 py-2 text-center">0.8</td>
+                                            <td class="px-3 py-2 text-center">0.2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">Q值更新规则（贝尔曼方程）</h4>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                Q(s, a) = Q(s, a) + α [r + γ max(Q(s', a')) - Q(s, a)]
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">其中：</p>
+<ul class="text-sm space-y-1 ml-5 list-disc">
+                                <li>α：学习率</li>
+                                <li>r：即时奖励</li>
+                                <li>γ：折扣因子</li>
+                                <li>s'：新状态</li>
+                                <li>a'：在新状态可能的行动</li>
+                            </ul>
+                            
+                            <h4 class="font-medium mb-2 mt-4 text-primary-600 dark:text-primary-300">Q学习算法</h4>
+                            <p class="text-sm mb-2">迭代过程：行动选择、观察、Q值更新。</p>
+                            <ol class="text-sm space-y-1 ml-6 list-decimal">
+                                <li>初始化Q表</li>
+                                <li>选择行动（平衡探索利用）</li>
+                                <li>采取行动，观察新状态s'和奖励r</li>
+                                <li>更新Q(s, a)</li>
+                                <li>更新状态：s ← s'</li>
+                                <li>迭代：重复2-5步至收敛</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">探索-利用策略（Exploration-Exploitation Strategies）</h4>
+                    <p class="mb-4">Q-learning面临探索（试新行动）与利用（用已知最佳行动）的两难。</p>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg mb-6">
+                        <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">ε-贪婪策略（Epsilon-Greedy Strategy）</h4>
+                        <p class="text-sm mb-2">以概率ε探索，1-ε利用。ε可以随时间调整。</p>
+                        <div class="bg-white dark:bg-gray-800 p-3 rounded-lg">
+                            <code class="text-sm">
+                                if random() < ε:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;action = random_action() # 探索<br>
+                                else:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;action = argmax(Q(state, :)) # 利用
+                            </code>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">数据假设</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">马尔可夫性质</span>：下一状态只取决于当前状态和行动
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <span class="font-medium">静态环境</span>：环境动态不随时间变化
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300">Q-learning是强大且通用的算法，无需环境模型即可学习。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 mt-8 text-primary-700 dark:text-primary-400">SARSA</h3>
+                    <p class="mb-4">SARSA是一种无模型RL算法，是同策略算法（学习当前遵循策略的价值）。根据下一状态实际采取的行动a'的Q值进行更新。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">SARSA更新规则</h4>
+                            <div class="math-block bg-gray-50 dark:bg-gray-700 p-3 rounded-lg text-center mb-4">
+                                Q(s, a) ← Q(s, a) + α [r + γ Q(s', a') - Q(s, a)]
+                            </div>
+                            <p class="text-sm mb-2">相比Q-learning，SARSA使用实际选择的下一行动a'的Q值，而非最大Q值。这使得SARSA更为保守，适用于需要严格遵守策略的环境。</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">SARSA算法步骤</h4>
+                            <ol class="text-sm space-y-1 ml-6 list-decimal">
+                                <li>初始化Q表</li>
+                                <li>选择行动a（基于当前策略的探索利用）</li>
+                                <li>采取行动a，观察s'和r</li>
+                                <li>选择下一步行动a'（根据当前策略）</li>
+                                <li>更新Q(s, a)</li>
+                                <li>更新状态和行动：s ← s', a ← a'</li>
+                                <li>迭代：重复2-6步至收敛</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-700 p-5 rounded-lg mb-6">
+                        <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">策略学习与非策略学习</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h5 class="text-sm font-medium mb-2">同策略学习（On-policy）</h5>
+                                <p class="text-xs text-gray-600 dark:text-gray-300">算法学习当前正在使用的策略的价值。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-medium mb-2">异策略学习（Off-policy）</h5>
+                                <p class="text-xs text-gray-600 dark:text-gray-300">算法可以在不考虑当前策略的情况下学习最优策略。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">SARSA是同策略学习</h4>
+                    <p class="mb-4">更新规则使用(s', a')，这意味着：</p>
+                    <ul class="space-y-2 mb-4 ml-5 list-disc">
+                        <li>学习当前正在使用的策略的价值</li>
+                        <li>更安全和稳定</li>
+                        <li>探索策略直接影响学习过程</li>
+                    </ul>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">SARSA是"边做边学"的算法。</p>
+                    
+                    <h4 class="font-medium mb-3 text-primary-600 dark:text-primary-300">SARSA与Q-learning对比</h4>
+                    <div class="overflow-auto">
+                        <table class="min-w-full text-sm">
+                            <thead class="bg-gray-50 dark:bg-gray-700">
+                                <tr>
+                                    <th class="px-4 py-2 text-left">特性</th>
+                                    <th class="px-4 py-2 text-center">SARSA</th>
+                                    <th class="px-4 py-2 text-center">Q-learning</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                                <tr>
+                                    <td class="px-4 py-2">学习策略</td>
+                                    <td class="px-4 py-2 text-center">同策略</td>
+                                    <td class="px-4 py-2 text-center">异策略</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">更新依据</td>
+                                    <td class="px-4 py-2 text-center">实际选择的下一行动</td>
+                                    <td class="px-4 py-2 text-center">最大Q值行动</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">行为特性</td>
+                                    <td class="px-4 py-2 text-center">更保守/安全</td>
+                                    <td class="px-4 py-2 text-center">更激进/最优</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-2">适用场景</td>
+                                    <td class="px-4 py-2 text-center">安全性要求高的环境</td>
+                                    <td class="px-4 py-2 text-center">追求最优策略的环境</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 神经网络 -->
+            <section id="neural-networks" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-network-wired"></i></span>
+                    神经网络
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">神经网络是深度学习的基础，由多层互连的神经元组成，能够学习复杂的非线性关系。多层神经网络（也称多层感知器MLPs）克服了单层感知器的局限性。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">神经元（Neuron）</h3>
+                            <p class="mb-4">神经元是神经网络的基本计算单元。每个神经元接收输入，处理这些输入，然后应用激活函数产生输出。</p>
+                            
+                            <!-- 神经元图示 -->
+                            <div class="h-36 bg-white dark:bg-gray-800 rounded-lg p-2 relative flex items-center justify-center">
+                                <div class="w-48 relative">
+                                    <!-- 输入节点 -->
+                                    <div class="absolute top-0 left-0">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                                            <span class="text-xs">x₁</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-12 left-0">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                                            <span class="text-xs">x₂</span>
+                                        </div>
+                                    </div>
+                                    <div class="absolute top-24 left-0">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                                            <span class="text-xs">x₃</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 神经元 -->
+                                    <div class="absolute top-12 left-24">
+                                        <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 border-2 border-green-500 flex items-center justify-center">
+                                            <span class="text-xs">Σ</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 输出 -->
+                                    <div class="absolute top-12 right-0">
+                                        <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+                                            <span class="text-xs">y</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 连接线 -->
+                                    <div class="absolute top-4 left-8 w-16 h-px bg-gray-400"></div>
+                                    <div class="absolute top-16 left-8 w-16 h-px bg-gray-400"></div>
+                                    <div class="absolute top-28 left-8 w-16 h-px bg-gray-400 transform -rotate-12"></div>
+                                    <div class="absolute top-16 left-36 w-10 h-px bg-gray-400"></div>
+                                    
+                                    <!-- 权重标签 -->
+                                    <div class="absolute top-2 left-16 text-xs">w₁</div>
+                                    <div class="absolute top-14 left-16 text-xs">w₂</div>
+                                    <div class="absolute top-24 left-16 text-xs">w₃</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">神经网络的层次结构</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">输入层</h4>
+                                    <p class="text-sm">数据的入口。每个神经元对应一个输入特征。</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">隐藏层</h4>
+                                    <p class="text-sm">网络的核心部分。负责计算和特征提取。多个隐藏层使网络能学习复杂的非线性关系。</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                                    <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">输出层</h4>
+                                    <p class="text-sm">产生最终结果。神经元数量取决于任务类型（如分类器中的类别数）。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 神经网络图示 -->
+                    <div class="mb-8 bg-white dark:bg-gray-800 rounded-lg p-4 flex justify-center">
+                        <div class="h-60 w-full max-w-lg relative">
+                            <!-- 输入层 -->
+                            <div class="absolute top-0 left-0 h-full w-1/4 flex flex-col items-center justify-center space-y-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 border border-blue-500 flex items-center justify-center"></div>
+                                <div class="text-sm mt-2">输入层</div>
+                            </div>
+                            
+                            <!-- 隐藏层1 -->
+                            <div class="absolute top-0 left-1/4 h-full w-1/4 flex flex-col items-center justify-center space-y-4">
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center"></div>
+                                <div class="text-sm mt-2">隐藏层1</div>
+                            </div>
+                            
+                            <!-- 隐藏层2 -->
+                            <div class="absolute top-0 left-2/4 h-full w-1/4 flex flex-col items-center justify-center space-y-4">
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 border border-green-500 flex items-center justify-center"></div>
+                                <div class="text-sm mt-2">隐藏层2</div>
+                            </div>
+                            
+                            <!-- 输出层 -->
+                            <div class="absolute top-0 left-3/4 h-full w-1/4 flex flex-col items-center justify-center space-y-4">
+                                <div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900 border border-purple-500 flex items-center justify-center"></div>
+                                <div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900 border border-purple-500 flex items-center justify-center"></div>
+                                <div class="text-sm mt-2">输出层</div>
+                            </div>
+                            
+                            <!-- 连接线 -->
+                            <svg class="absolute inset-0 w-full h-full z-0" viewBox="0 0 400 240">
+                                <!-- 第一层到第二层连接 -->
+                                <g stroke="#CBD5E1" stroke-width="1" class="dark:stroke-gray-600">
+                                    <line x1="60" y1="40" x2="140" y2="40" />
+                                    <line x1="60" y1="40" x2="140" y2="100" />
+                                    <line x1="60" y1="40" x2="140" y2="160" />
+                                    
+                                    <line x1="60" y1="100" x2="140" y2="40" />
+                                    <line x1="60" y1="100" x2="140" y2="100" />
+                                    <line x1="60" y1="100" x2="140" y2="160" />
+                                    
+                                    <line x1="60" y1="160" x2="140" y2="40" />
+                                    <line x1="60" y1="160" x2="140" y2="100" />
+                                    <line x1="60" y1="160" x2="140" y2="160" />
+                                    
+                                    <line x1="60" y1="220" x2="140" y2="40" />
+                                    <line x1="60" y1="220" x2="140" y2="100" />
+                                    <line x1="60" y1="220" x2="140" y2="160" />
+                                </g>
+                                
+                                <!-- 第二层到第三层连接 -->
+                                <g stroke="#CBD5E1" stroke-width="1" class="dark:stroke-gray-600">
+                                    <line x1="140" y1="40" x2="220" y2="70" />
+                                    <line x1="140" y1="40" x2="220" y2="130" />
+                                    
+                                    <line x1="140" y1="100" x2="220" y2="70" />
+                                    <line x1="140" y1="100" x2="220" y2="130" />
+                                    
+                                    <line x1="140" y1="160" x2="220" y2="70" />
+                                    <line x1="140" y1="160" x2="220" y2="130" />
+                                </g>
+                                
+                                <!-- 第三层到第四层连接 -->
+                                <g stroke="#CBD5E1" stroke-width="1" class="dark:stroke-gray-600">
+                                    <line x1="220" y1="70" x2="300" y2="70" />
+                                    <line x1="220" y1="70" x2="300" y2="130" />
+                                    
+                                    <line x1="220" y1="130" x2="300" y2="70" />
+                                    <line x1="220" y1="130" x2="300" y2="130" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">多层结构的优势</h3>
+                    <p class="mb-6">多层感知器可以逼近几乎任何复杂函数，能够捕捉数据中的非线性模式。这使MLP能够解决XOR等问题，这是单层感知器无法处理的。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">激活函数</h3>
+                            <p class="mb-4">激活函数引入非线性，决定神经元的激活程度。没有激活函数，多层网络只能表示线性函数。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">常见的激活函数类型</h4>
+                            <ul class="space-y-2 mb-4 ml-5 list-disc">
+                                <li><span class="font-medium">Sigmoid</span>：将输出压缩到0-1范围</li>
+                                <li><span class="font-medium">ReLU</span>：对负输入返回0，对正输入保持不变。最常用</li>
+                                <li><span class="font-medium">Tanh</span>：将输出压缩到-1和1之间</li>
+                                <li><span class="font-medium">Softmax</span>：常用于多类分类的输出层</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <!-- 激活函数图示 -->
+                            <div class="bg-white dark:bg-gray-800 rounded-lg p-4 h-48 grid grid-cols-2 gap-4">
+                                <div>
+                                    <div class="h-6 text-center text-sm">Sigmoid</div>
+                                    <div class="h-24 relative">
+                                        <svg viewBox="0 0 100 60" class="h-full w-full">
+                                            <path d="M0,50 C20,50 25,10 50,10 C75,10 80,50 100,50" fill="none" stroke="#3B82F6" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="h-6 text-center text-sm">ReLU</div>
+                                    <div class="h-24 relative">
+                                        <svg viewBox="0 0 100 60" class="h-full w-full">
+                                            <path d="M0,50 L50,50 L100,10" fill="none" stroke="#EF4444" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="h-6 text-center text-sm">Tanh</div>
+                                    <div class="h-24 relative">
+                                        <svg viewBox="0 0 100 60" class="h-full w-full">
+                                            <path d="M0,30 C20,10 30,10 50,30 C70,50 80,50 100,30" fill="none" stroke="#10B981" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="h-6 text-center text-sm">Softmax</div>
+                                    <div class="h-24 relative">
+                                        <svg viewBox="0 0 100 60" class="h-full w-full">
+                                            <path d="M10,50 Q30,10 50,10 Q70,10 90,50" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">训练MLP</h3>
+                    <p class="mb-4">目标是调整权重和偏置，最小化预测错误。通过反向传播和梯度下降实现。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">反向传播</h4>
+                            <p class="mb-4">计算损失函数关于参数梯度的算法。</p>
+                            <ol class="text-sm space-y-1 ml-6 list-decimal">
+                                <li>前向传播：计算神经网络的输出</li>
+                                <li>计算误差：预测值与实际值的差异</li>
+                                <li>反向传播：从输出层向输入层传播误差</li>
+                                <li>更新参数：根据梯度调整权重</li>
+                            </ol>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">梯度下降</h4>
+                            <p class="mb-4">迭代优化算法，寻找函数的最小值。沿负梯度方向更新参数，步长由学习率控制。</p>
+                            <ol class="text-sm space-y-1 ml-6 list-decimal">
+                                <li>初始化参数（权重和偏置）</li>
+                                <li>计算损失函数关于参数的梯度</li>
+                                <li>沿负梯度方向更新参数</li>
+                                <li>重复步骤2-3直到收敛</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">卷积神经网络（CNNs）</h3>
+                    <p class="mb-4">CNN是专门处理网格状数据（如图像）的深度神经网络。特别擅长捕捉空间层次结构特征。主要由三类层组成：</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">卷积层</h4>
+                            <p class="text-sm">CNN的核心。用滤波器对输入进行卷积操作，提取特征。输出称为特征图。</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">池化层</h4>
+                            <p class="text-sm">降低特征图的维度，减少计算复杂度，防止过拟合。常用最大池化或平均池化。</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <h4 class="font-medium mb-1 text-primary-600 dark:text-primary-300">全连接层</h4>
+                            <p class="text-sm">类似MLP中的层。网络末端执行高级推理，做出最终预测。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mb-6">CNN通常由卷积层和池化层交替堆叠，最后是全连接层进行分类或回归。</p>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">递归神经网络（RNNs）</h3>
+                    <p class="mb-4">RNN是专门处理序列数据（顺序重要）的神经网络。具有递归连接，能够保持"记忆"。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">处理序列数据</h4>
+                            <p class="mb-4">递归连接形成循环，使信息从一时间步传到下一步。能"记住"上下文信息。每一步接收当前输入和上一步的隐藏状态，产出当前输出和更新后的隐藏状态。</p>
+                            
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">梯度消失问题</h4>
+                            <p class="mb-2">RNN面临梯度消失问题。在BPTT（通过时间的反向传播）中，梯度在反向传播时可能变得极小接近零，阻碍学习长期依赖关系。</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-medium mb-2 text-primary-600 dark:text-primary-300">LSTM和GRU</h4>
+                            <p class="mb-4">为解决梯度消失而开发的变体：长短期记忆网络（LSTM）和门控循环单元（GRU）。引入门控机制控制信息流。</p>
+                            
+                            <div class="space-y-3">
+                                <div class="bg-gray-50 dark:bg-gray-700 p-2 rounded-lg">
+                                    <h5 class="text-sm font-medium mb-1">LSTM</h5>
+                                    <p class="text-xs">包含存储单元和三个门：输入门、遗忘门、输出门。允许网络选择性地记忆或遗忘信息。</p>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-700 p-2 rounded-lg">
+                                    <h5 class="text-sm font-medium mb-1">GRU</h5>
+                                    <p class="text-xs">结构更简单，只有两个门：更新门和重置门。计算效率通常更高。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 dark:text-gray-300">LSTM和GRU有效克服了梯度消失问题，在序列建模任务中取得了显著进展。</p>
+                </div>
+            </section>
+
+            <!-- 生成式人工智能 -->
+            <section id="generative-ai" class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <h2 class="text-3xl font-bold mb-6 flex items-center">
+                    <span class="feature-icon mr-2"><i class="fas fa-magic"></i></span>
+                    生成式人工智能
+                </h2>
+                
+                <div class="ai-card bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <p class="mb-6">生成式AI侧重于生成原创内容（文本、图像、音乐等），而不仅仅是进行分类或预测。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">生成式人工智能的工作原理</h3>
+                            <p class="mb-4">核心是基于神经网络的算法，学习数据的模式和结构，捕获其统计属性以生成新样本。过程包括：训练 -> 生成 -> 评估。</p>
+                            
+                            <h3 class="text-xl font-semibold mb-4 text-primary-700 dark:text-primary-400">生成式人工智能模型的类型</h3>
+                            <ul class="space-y-3 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-random text-green-500 mt-1 mr-2"></i>
+                                    <div>
+                                        <span class="font-medium">生成对抗网络（GANs）</span>：生成器与判别器对抗训练
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Ai  | 新手入门Ai的不二指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f7ff',
+                            100: '#e0eefe',
+                            200: '#b9ddfc',
+                            300: '#7cc2fa',
+                            400: '#36a3f5',
+                            500: '#0c87e0',
+                            600: '#026abf',
+                            700: '#05559b',
+                            800: '#0a4880',
+                            900: '#0e3c6a',
+                            950: '#0a2547',
+                        },
+                        secondary: {
+                            50: '#f5f3ff',
+                            100: '#ede8ff',
+                            200: '#dcd5fe',
+                            300: '#c3b2fd',
+                            400: '#a383fc',
+                            500: '#8557f7',
+                            600: '#7935ee',
+                            700: '#6821d9',
+                            800: '#571bb1',
+                            900: '#491992',
+                            950: '#2c0e63',
+                        },
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'fade-in-up': 'fadeInUp 0.7s ease-out forwards',
+                        'float': 'float 4s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(20px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                            '100%': { transform: 'translateY(0px)' },
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        /* 进度条样式 */
+        #progress-bar {
+            height: 3px;
+            background: linear-gradient(to right, #0c87e0, #7935ee);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: width 0.2s ease-out;
+        }
+
+        /* 目录选中效果 */
+        .sidebar a.active {
+            background-color: rgba(12, 135, 224, 0.1);
+            color: #0c87e0;
+            font-weight: 500;
+            padding: 0.75rem 1rem;  /* 保持与普通状态一致的内边距 */
+            line-height: 1.5;  /* 保持与普通状态一致的行高 */
+        }
+
+        .sidebar a.active:hover {
+            background-color: rgba(12, 135, 224, 0.15);
+        }
+
+        /* 二级标签选中效果 */
+        .sidebar a[href^="#"].active {
+            padding: 0.5rem 1rem 0.5rem 2rem;  /* 保持与普通二级标签一致的内边距 */
+            line-height: 1.5;
+        }
+
+        .dark .sidebar a.active {
+            background-color: rgba(12, 135, 224, 0.2);
+            color: #36a3f5;
+        }
+
+        .dark .sidebar a.active:hover {
+            background-color: rgba(12, 135, 224, 0.25);
+        }
+
+        /* 目录项悬停效果 */
+        .sidebar a {
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.75rem 1rem;  /* 增加内边距 */
+            line-height: 1.5;  /* 增加行高 */
+            margin: 0.25rem 0;  /* 增加项目间距 */
+        }
+
+        .sidebar a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: linear-gradient(to bottom, #0c87e0, #7935ee);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar a:hover::before,
+        .sidebar a.active::before {
+            transform: scaleY(1);
+        }
+
+        .code-block {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .math-block {
+            overflow-x: auto;
+            padding: 0.5rem 0;
+        }
+
+        .sidebar {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background-color: rgba(156, 163, 175, 0.5);
+            border-radius: 6px;
+        }
+
+        .content-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateY(-0.25rem); /* 相当于 -3px */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+        }
+
+        .ai-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .ai-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 渐变文本效果 */
+        .gradient-text {
+            background: linear-gradient(135deg, #0c87e0, #7935ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* 按钮悬停效果 */
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 卡片过渡效果 */
+        .card-transition {
+            transition: all 0.3s ease;
+        }
+        
+        .card-transition:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .concept-highlight {
+            position: relative;
+        }
+        
+        .concept-highlight::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #0c87e0, #7935ee);
+            transform: scaleX(0);
+            transform-origin: bottom left;
+            transition: transform 0.3s ease;
+        }
+        
+        .concept-highlight:hover::after {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            background: linear-gradient(135deg, #0c87e0, #7935ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* 为数学公式添加特殊样式 */
+        .mjx-chtml {
+            margin: 0.5rem 0 !important;
+            font-size: 110% !important;
+        }
+
+        /* 让所有元素从下到上淡入 */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 自定义动画 */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+    <!-- 进度条 -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 z-50 transition-all duration-300" style="width: 0%"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md px-4 py-3 flex justify-between items-center animate-fade-in">
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-brain text-2xl feature-icon"></i>
+            <h1 class="text-xl font-bold gradient-text">人工智能基础学习</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">
+                <i class="fas fa-sun text-yellow-500 dark:hidden"></i>
+                <i class="fas fa-moon text-blue-300 hidden dark:block"></i>
+            </button>
+            <a href="#author" class="hidden md:flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors hover-effect">
+                <i class="fas fa-user-circle"></i>
+                <span>作者信息</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <div class="flex flex-1 relative">
+        <!-- 侧边栏/目录 -->
+        <aside id="sidebar" class="sidebar fixed top-16 left-0 bottom-0 w-64 bg-white dark:bg-gray-800 shadow-md overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform z-40 animate-fade-in">
+            <div class="p-4">
+                <h2 class="text-lg font-bold mb-4 text-primary-700 dark:text-primary-400">目录</h2>
+                <ul class="space-y-1">
+                    <!-- AI基础概念 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 card-transition" onclick="toggleSubmenu('ai-basics')">
+                            <span>AI基础概念</span>
+                            <i id="ai-basics-icon" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </div>
+                        <ul id="ai-basics-submenu" class="pl-4 mt-1 hidden space-y-1 animate-fade-in-up">
+                            <li><a href="#ai-ml" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">人工智能与机器学习</a></li>
+                            <li><a href="#deep-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">深度学习</a></li>
+                            <li><a href="#ai-ml-dl-relation" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">AI、ML与DL的关系</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 数学基础 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 card-transition" onclick="toggleSubmenu('math')">
+                            <span>数学基础</span>
+                            <i id="math-icon" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </div>
+                        <ul id="math-submenu" class="pl-4 mt-1 hidden space-y-1 animate-fade-in-up">
+                            <li><a href="#ai-math" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors hover-effect">人工智能数学复习</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 监督学习 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('supervised')">
+                            <span>监督学习</span>
+                            <i id="supervised-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="supervised-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#supervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">监督学习概述</a></li>
+                            <li><a href="#linear-regression" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">线性回归</a></li>
+                            <li><a href="#logistic-regression" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">逻辑回归</a></li>
+                            <li><a href="#decision-tree" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">决策树</a></li>
+                            <li><a href="#svm" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">支持向量机</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 无监督学习 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('unsupervised')">
+                            <span>无监督学习</span>
+                            <i id="unsupervised-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="unsupervised-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#unsupervised-intro" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">无监督学习概述</a></li>
+                            <li><a href="#kmeans" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">K-Means聚类</a></li>
+                            <li><a href="#pca" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">主成分分析</a></li>
+                            <li><a href="#anomaly-detection" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">异常检测</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 深度学习进阶 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('deep-learning-advanced')">
+                            <span>深度学习进阶</span>
+                            <i id="deep-learning-advanced-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="deep-learning-advanced-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#neural-networks" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">神经网络基础</a></li>
+                            <li><a href="#generative-ai" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">生成式AI</a></li>
+                            <li><a href="#reinforcement-learning" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">强化学习</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- AI安全与伦理 -->
+                    <li>
+                        <div class="py-1 px-2 flex justify-between items-center cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700" onclick="toggleSubmenu('ai-security')">
+                            <span>AI安全与伦理</span>
+                            <i id="ai-security-icon" class="fas fa-chevron-down text-xs"></i>
+                        </div>
+                        <ul id="ai-security-submenu" class="pl-4 mt-1 hidden space-y-1">
+                            <li><a href="#ai-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">AI安全与红队测试</a></li>
+                            <li><a href="#ml-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">机器学习系统攻击</a></li>
+                            <li><a href="#llm-security" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">LLM安全威胁</a></li>
+                            <li><a href="#prompt-injection" class="block py-1 px-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">提示注入与越狱</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- 移动端侧边栏切换按钮 -->
+        <button id="sidebar-toggle" class="lg:hidden fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-primary-600 text-white shadow-lg flex items-center justify-center">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- 主要内容 -->
+        <main class="flex-1 p-4 lg:p-10 lg:ml-64">
+            <!-- 介绍部分 -->
+            <section class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">Hello Ai </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">为新生构建的可视化的入门AI学习指南，涵盖机器学习、深度学习、强化学习，神将网络，LLM，Ai安全与红队测试 </p>
                 </div>
 
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 content-card">
