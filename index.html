@@ -395,7 +395,7 @@
             <section class="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto mb-12 fade-in-section is-visible">
                 <div class="text-center mb-12">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">Hello Ai </h1>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">为新生构建的可视化的入门AI学习指南，涵盖机器学习、深度学习、强化学习，神经网络，LLM，Ai安全与红队测试 </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">为新生构建的可视化的入门AI学习指南，涵盖机器学习、深度学习、强化学习，神将网络，LLM，Ai安全与红队测试 </p>
                 </div>
 
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 content-card">
@@ -3487,7 +3487,7 @@
                         </div>
 
                         <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2">洺熙/顾顾/DM_TomHE/胖胖虎/zhanyi</h3>
+                            <h3 class="text-xl font-semibold mb-2">洺熙/DM_TomHE/顾顾/胖胖虎/zhanyi</h3>
                             <p class="text-gray-600 dark:text-gray-300 mb-4">联系方式：vx：ymzbnlj412， 欢迎联系加入交流群</p>
 
                             <div class="space-y-2">
@@ -3528,9 +3528,12 @@
     <script>
         // 主题切换
         const themeToggle = document.getElementById('theme-toggle');
+        let isManualMode = false; // 添加手动模式标志
         
         // 检查系统时间并设置主题
         function setThemeByTime() {
+            if (isManualMode) return; // 如果是手动模式，不执行自动切换
+            
             const hour = new Date().getHours();
             const isNight = hour >= 18 || hour < 6; // 晚上6点到早上6点为夜间模式
             
@@ -3546,6 +3549,7 @@
 
         // 监听主题切换按钮
         themeToggle.addEventListener('click', () => {
+            isManualMode = true; // 设置为手动模式
             document.documentElement.classList.toggle('dark');
         });
 
